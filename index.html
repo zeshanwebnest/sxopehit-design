@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SxopeHit connects professionals, students and families with global career, immigration and study opportunities - recruitment services, student visa consultancy, immigration and investment & citizenship.">
+<title>SxopeHit | Global Recruitment, Immigration &amp; Student Visa Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <span class="preloader__plane"><i class="fa-solid fa-paper-plane"></i></span>
+    <span class="preloader__bar"><i></i></span>
+  </div>
+</div>
+
+<!-- ============ SEARCH POPUP ============ -->
+<div class="search-popup" id="searchPopup">
+  <button class="search-popup__close" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-popup__form" onsubmit="return false;">
+    <input type="search" placeholder="Type keyword and hit enter..." aria-label="Search">
+    <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <div class="mobile-nav__head">
+    <a href="index.html" class="brand brand--light">
+      <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+    </a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mobile-nav__menu">
+    <ul class="m-menu">
+      <li class="has-children"><a href="index.html">Home</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="index.html">Home One</a></li><li><a href="#">Home Two</a></li><li><a href="#">Home Three</a></li></ul>
+      </li>
+      <li class="has-children"><a href="#">Pages</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faqs.html">FAQ</a></li></ul>
+      </li>
+      <li class="has-children"><a href="services.html">Services</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="service-recruitment.html">Recruitment Services</a></li><li><a href="service-student-visa.html">Student Visa Consultancy</a></li><li><a href="service-immigration.html">Immigration Services</a></li><li><a href="service-investment.html">Investment &amp; Citizenship</a></li></ul>
+      </li>
+      <li class="has-children"><a href="blog.html">Blog</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="blog.html">Blog Grid</a></li><li><a href="blog-details.html">Blog Details</a></li></ul>
+      </li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav__foot">
+    <a href="tel:+923200557755" class="mobile-nav__call"><i class="fa-solid fa-phone"></i> +92 3200557 755</a>
+    <div class="socials socials--light">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ HEADER + HERO (overlay header on a boxed hero) ============ -->
+<div class="hero-wrap">
+
+  <header class="site-header" id="siteHeader">
+    <div class="topbar">
+      <div class="topbar__inner">
+        <ul class="topbar__meta">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:support@sxopehit.com">support@sxopehit.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Multan Road, Lahore, Pakistan</li>
+        </ul>
+        <div class="topbar__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar" id="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+        </a>
+
+        <div class="navpill">
+          <nav class="mainmenu" aria-label="Main navigation">
+            <ul>
+              <li class="has-drop is-active"><a href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="index.html">Home One</a></li>
+                  <li><a href="#">Home Two</a></li>
+                  <li><a href="#">Home Three</a></li>
+                </ul>
+              </li>
+              <li class="has-drop"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="faqs.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="has-drop"><a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="service-recruitment.html">Recruitment Services</a></li>
+                  <li><a href="service-student-visa.html">Student Visa Consultancy</a></li>
+                  <li><a href="service-immigration.html">Immigration Services</a></li>
+                  <li><a href="service-investment.html">Investment &amp; Citizenship</a></li>
+                  <li><a href="services.html">All Services</a></li>
+                </ul>
+              </li>
+                            <li class="has-drop"><a href="blog.html">Blog <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="blog.html">Blog Grid</a></li>
+                  <li><a href="blog-details.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="navpill__tools">
+            <button class="pill-icon" id="searchToggle" aria-label="Open search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="pill-icon" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+            <a href="tel:+923200557755" class="phone-btn"><i class="fa-solid fa-comment-dots"></i> +92 3200557 755</a>
+          </div>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="swiper hero-swiper" id="heroSwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img class="hero__bg" src="assets/images/visa-consultant-meeting-handshake.jpg"
+               alt="Visa consultant shaking hands with a client at the SxopeHit office"
+               fetchpriority="high" decoding="async" width="1920" height="1080">
+          <div class="hero__overlay"></div>
+          <div class="container">
+            <div class="hero__content">
+              <span class="hero__badge" data-anim="1">Recruitment &amp; Talent Mobility</span>
+              <h1 data-anim="2">Work Recruitment <br>Services</h1>
+              <p data-anim="3">Connecting exceptional, talented individuals with global career and growth opportunities.</p>
+              <div class="hero__actions" data-anim="4">
+                <a href="#contact" class="btn btn--red btn--lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img class="hero__bg" src="assets/images/couple-receiving-approved-passports.jpg"
+               alt="Couple receiving their approved passports from a SxopeHit consultant"
+               decoding="async" width="1920" height="1080">
+          <div class="hero__overlay"></div>
+          <div class="container">
+            <div class="hero__content">
+              <span class="hero__badge" data-anim="1">Study Abroad With Confidence</span>
+              <h1 data-anim="2">Student Visa <br>Services</h1>
+              <p data-anim="3">Streamlining and simplifying the complex visa application process from start to finish.</p>
+              <div class="hero__actions" data-anim="4">
+                <a href="#contact" class="btn btn--red btn--lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img class="hero__bg" src="assets/images/immigration-services-consultation.jpg"
+               alt="Immigration adviser handing travel documents to a couple"
+               decoding="async" width="1920" height="1080">
+          <div class="hero__overlay"></div>
+          <div class="container">
+            <div class="hero__content">
+              <span class="hero__badge" data-anim="1">30 Countries &middot; 20 Years</span>
+              <h1 data-anim="2">Immigration <br>Services</h1>
+              <p data-anim="3">Navigate your visa needs with expert guidance for destinations across Canada, Australia and the UK.</p>
+              <div class="hero__actions" data-anim="4">
+                <a href="#contact" class="btn btn--red btn--lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img class="hero__bg" src="assets/images/immigration-consultant-globe-office.jpg"
+               alt="Immigration consultant with a globe at the SxopeHit office"
+               decoding="async" width="1920" height="1080">
+          <div class="hero__overlay"></div>
+          <div class="container">
+            <div class="hero__content">
+              <span class="hero__badge" data-anim="1">Invest, Reside &amp; Settle</span>
+              <h1 data-anim="2">Investment &amp; <br>Citizenship</h1>
+              <p data-anim="3">Explore investment and residency opportunities with end-to-end guidance from our advisors.</p>
+              <div class="hero__actions" data-anim="4">
+                <a href="#contact" class="btn btn--red btn--lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="hero__pagination" id="heroPagination"></div>
+    </div>
+  </section>
+
+</div>
+<!-- ============ SERVICES ============ -->
+<section class="services section" id="services">
+  <span class="services__pattern" aria-hidden="true"></span>
+  <div class="container">
+
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> Our Services</span>
+      <h2 class="sec-title-plain">Recruitment, Immigration &amp; Study<br>Services Backed by Expertise</h2>
+    </div>
+
+    <div class="services__grid">
+
+      <div class="services__cards">
+        <article class="service-card" data-reveal>
+          <span class="service-card__icon"><i class="fa-solid fa-user-tie"></i></span>
+          <h3>Recruitment Services</h3>
+          <p>Connect with international employers and discover career opportunities that match your skills and ambitions.</p>
+          <a href="#" class="link-more link-more--diag">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card" data-reveal data-delay="100">
+          <span class="service-card__icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <h3>Student Visa Consultancy</h3>
+          <p>Expert guidance for university selection, visa documentation and every step of your application.</p>
+          <a href="#" class="link-more link-more--diag">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card" data-reveal data-delay="100">
+          <span class="service-card__icon"><i class="fa-solid fa-passport"></i></span>
+          <h3>Immigration Services</h3>
+          <p>Navigate your visa needs with expert guidance for destinations across Canada, Australia and the UK.</p>
+          <a href="#" class="link-more link-more--diag">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card" data-reveal data-delay="200">
+          <span class="service-card__icon"><i class="fa-solid fa-building-columns"></i></span>
+          <h3>Investment &amp; Citizenship</h3>
+          <p>Explore investment and residency opportunities that lead to long-term settlement abroad.</p>
+          <a href="#" class="link-more link-more--diag">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+      </div>
+
+      <aside class="services__visual" data-reveal data-delay="150">
+        <img src="assets/images/services-visual.jpg" alt="Clients celebrating an approved United States visa">
+
+        <div class="services__badge">
+          <span class="services__wreath"><i class="fa-solid fa-award"></i></span>
+          <strong>Trusted Global<br>Recruitment Partner</strong>
+        </div>
+
+        <div class="services__countries">
+          <div class="flag-stack" aria-hidden="true">
+            <span class="flag-stack__item" style="background-image:url('assets/images/flags/us.png')"></span>
+            <span class="flag-stack__item" style="background-image:url('assets/images/flags/gb.png')"></span>
+            <span class="flag-stack__item" style="background-image:url('assets/images/flags/ca.png')"></span>
+            <span class="flag-stack__item" style="background-image:url('assets/images/flags/au.png')"></span>
+            <span class="flag-stack__more"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <p><span class="counter" data-count="30">0</span> Countries we serve</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="about">
+  <div class="container about__grid">
+    <div class="about__media" data-reveal>
+      <div class="about__img-main">
+        <img src="assets/images/about-1.jpg" alt="Immigration advisors briefing a client">
+      </div>
+      <div class="about__img-sub">
+        <img src="assets/images/about-2.jpg" alt="Clients celebrating a successful application">
+      </div>
+      <div class="about__exp">
+        <strong><span class="counter" data-count="10">0</span>+</strong>
+        <span>Years of <br>Experience</span>
+      </div>
+    </div>
+
+    <div class="about__content" data-reveal data-delay="150">
+      <span class="eyebrow"><i class="fa-solid fa-plane-up"></i> About Company</span>
+      <h2 class="sec-title sec-title--left"><span class="sec-title__ghost">Who We Are</span>We Help You Build a Future Without Borders</h2>
+      <p class="lead">With over 10 years of experience, SxopeHit helps professionals, students, families and businesses navigate international recruitment, immigration and student visa processes.</p>
+
+      <ul class="check-list">
+        <li><i class="fa-solid fa-check"></i> 10+ Years of Industry Experience</li>
+        <li><i class="fa-solid fa-check"></i> Global Recruitment Expertise</li>
+        <li><i class="fa-solid fa-check"></i> Personalized Consultation</li>
+        <li><i class="fa-solid fa-check"></i> Immigration &amp; Visa Guidance</li>
+        <li><i class="fa-solid fa-check"></i> International Opportunities</li>
+        <li><i class="fa-solid fa-check"></i> End-to-End Support</li>
+      </ul>
+
+      <div class="about__foot">
+        <a href="#contact" class="btn btn--red btn--lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:+923200557755" class="call-box">
+          <span class="call-box__icon"><i class="fa-solid fa-phone-volume"></i></span>
+          <span class="call-box__text">
+            <small>Have Questions? Call Now</small>
+            <strong>+92 3200557 755</strong>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUNTERS ============ -->
+<section class="counters">
+  <span class="counters__stripes" aria-hidden="true"></span>
+  <div class="container">
+    <div class="counters__grid">
+      <div class="counter-item" data-reveal>
+        <h3><span class="counter" data-count="10">0</span>+</h3>
+        <p>Years of Experience</p>
+      </div>
+      <div class="counter-item" data-reveal data-delay="100">
+        <h3><span class="counter" data-count="12500">0</span>+</h3>
+        <p>Professionals Placed</p>
+      </div>
+      <div class="counter-item" data-reveal data-delay="200">
+        <h3><span class="counter" data-count="30">0</span>+</h3>
+        <p>Countries With Global Presence</p>
+      </div>
+      <div class="counter-item" data-reveal data-delay="300">
+        <h3><span class="counter" data-count="450">0</span>+</h3>
+        <p>Business &amp; Recruitment Partners</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES / GATEWAY ============ -->
+<section class="features section" id="features">
+  <div class="container">
+
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> Why Choose Us</span>
+      <h2 class="sec-title-plain">Gateway to Global Opportunities<br>Without Any Limits</h2>
+    </div>
+
+    <div class="features__grid">
+      <div class="features__col">
+        <article class="feature-item" data-reveal>
+          <span class="feature-item__icon"><i class="fa-solid fa-earth-americas"></i></span>
+          <div>
+            <h3>Global Expertise</h3>
+            <p>Years of cross-border experience across recruitment, immigration and study pathways in 30+ countries.</p>
+          </div>
+        </article>
+        <article class="feature-item" data-reveal data-delay="100">
+          <span class="feature-item__icon"><i class="fa-solid fa-user-gear"></i></span>
+          <div>
+            <h3>Personalized Solutions</h3>
+            <p>Every profile is assessed individually so you pursue the route that best fits your skills and goals.</p>
+          </div>
+        </article>
+        <article class="feature-item" data-reveal data-delay="200">
+          <span class="feature-item__icon"><i class="fa-solid fa-bolt"></i></span>
+          <div>
+            <h3>Trusted Guidance</h3>
+            <p>Honest, transparent advice at every stage - no false promises and no hidden costs.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="features__media" data-reveal data-delay="100">
+        <span class="features__blob" aria-hidden="true"></span>
+        <img src="assets/images/features-person.jpg" alt="Senior immigration consultant">
+      </div>
+
+      <div class="features__col">
+        <article class="feature-item" data-reveal data-delay="100">
+          <span class="feature-item__icon"><i class="fa-solid fa-chart-line"></i></span>
+          <div>
+            <h3>Global Opportunities</h3>
+            <p>Direct access to international employers, universities and partners across multiple regions.</p>
+          </div>
+        </article>
+        <article class="feature-item" data-reveal data-delay="200">
+          <span class="feature-item__icon"><i class="fa-solid fa-headset"></i></span>
+          <div>
+            <h3>End-to-End Support</h3>
+            <p>One dedicated adviser stays with you from first consultation through to arrival and settlement.</p>
+          </div>
+        </article>
+        <article class="feature-item" data-reveal data-delay="300">
+          <span class="feature-item__icon"><i class="fa-solid fa-scale-balanced"></i></span>
+          <div>
+            <h3>Long-Term Partnership</h3>
+            <p>We stay in touch long after placement, supporting your career and residency milestones.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ============ GLOBAL NETWORK ============ -->
+<section class="network section" id="network">
+  <div class="container">
+    <div class="sec-head sec-head--center sec-head--light" data-reveal>
+      <span class="eyebrow eyebrow--light"><i class="fa-solid fa-plane-up"></i> Countries</span>
+      <h2 class="sec-title sec-title--light"><span class="sec-title__ghost sec-title__ghost--light">Our Global</span>Network</h2>
+    </div>
+
+    <div class="network__list">
+      <article class="country">
+        <div class="country__card">
+          <div class="country__head">
+            <img src="assets/images/flags/ca.png" alt="Flag of Canada">
+            <h3>Canada</h3>
+          </div>
+          <p>We specialise in providing reliable and transparent immigration services for individuals, families and professionals looking to build a future in Canada.</p>
+          <ul class="country__list">
+            <li><i class="fa-solid fa-check"></i> Express Entry Visa</li>
+            <li><i class="fa-solid fa-check"></i> Family Sponsorship Visa</li>
+            <li><i class="fa-solid fa-check"></i> Provincial Nominee Visa</li>
+            <li><i class="fa-solid fa-check"></i> Refugee and Asylum Visa</li>
+            <li><i class="fa-solid fa-check"></i> Business / Investor Visa</li>
+            <li><i class="fa-solid fa-check"></i> Permanent Residency</li>
+          </ul>
+          <a href="#contact" class="btn btn--red">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="country__media">
+          <img src="assets/images/country-canada.jpg" alt="Vancouver skyline, Canada">
+        </div>
+      </article>
+
+      <article class="country">
+        <div class="country__card">
+          <div class="country__head">
+            <img src="assets/images/flags/jp.png" alt="Flag of Japan">
+            <h3>Japan</h3>
+          </div>
+          <p>Work, study and specified-skill routes into Japan, handled by advisors who understand the documentation standards local authorities expect.</p>
+          <ul class="country__list">
+            <li><i class="fa-solid fa-check"></i> Highly Skilled Professional</li>
+            <li><i class="fa-solid fa-check"></i> Family Sponsorship Visa</li>
+            <li><i class="fa-solid fa-check"></i> Specified Skilled Worker</li>
+            <li><i class="fa-solid fa-check"></i> Student Visa</li>
+            <li><i class="fa-solid fa-check"></i> Business Manager Visa</li>
+            <li><i class="fa-solid fa-check"></i> Permanent Residency</li>
+          </ul>
+          <a href="#contact" class="btn btn--red">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="country__media">
+          <img src="assets/images/country-japan.jpg" alt="Torii gate on the water, Japan">
+        </div>
+      </article>
+
+      <article class="country">
+        <div class="country__card">
+          <div class="country__head">
+            <img src="assets/images/flags/us.png" alt="Flag of the United States">
+            <h3>USA</h3>
+          </div>
+          <p>Employment, study and family-based petitions for the United States, prepared with the evidence standards that reduce requests for further information.</p>
+          <ul class="country__list">
+            <li><i class="fa-solid fa-check"></i> H-1B Work Visa</li>
+            <li><i class="fa-solid fa-check"></i> Family Sponsorship Visa</li>
+            <li><i class="fa-solid fa-check"></i> F-1 Student Visa</li>
+            <li><i class="fa-solid fa-check"></i> EB-5 Investor Visa</li>
+            <li><i class="fa-solid fa-check"></i> L-1 Transfer Visa</li>
+            <li><i class="fa-solid fa-check"></i> Green Card</li>
+          </ul>
+          <a href="#contact" class="btn btn--red">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="country__media">
+          <img src="assets/images/country-usa.jpg" alt="Statue of Liberty, United States">
+        </div>
+      </article>
+
+      <article class="country">
+        <div class="country__card">
+          <div class="country__head">
+            <img src="assets/images/flags/au.png" alt="Flag of Australia">
+            <h3>Australia</h3>
+          </div>
+          <p>Points-tested skilled migration, regional sponsorship and student pathways for Australia, with full support through the SkillSelect process.</p>
+          <ul class="country__list">
+            <li><i class="fa-solid fa-check"></i> Skilled Independent Visa</li>
+            <li><i class="fa-solid fa-check"></i> Partner and Family Visa</li>
+            <li><i class="fa-solid fa-check"></i> State Nominated Visa</li>
+            <li><i class="fa-solid fa-check"></i> Regional Work Visa</li>
+            <li><i class="fa-solid fa-check"></i> Student Visa</li>
+            <li><i class="fa-solid fa-check"></i> Permanent Residency</li>
+          </ul>
+          <a href="#contact" class="btn btn--red">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="country__media">
+          <img src="assets/images/country-australia.jpg" alt="Sydney Harbour, Australia">
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="container cta__grid">
+    <div class="cta__content" data-reveal>
+      <h2>Ready to Start <br>Your <span>Journey <br>Abroad?</span></h2>
+      <div class="cta__card">
+        <p>Book a free consultation with one of our experts today.</p>
+        <a href="#contact" class="btn btn--navy">Schedule Consultation <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="cta__media" data-reveal data-delay="150">
+      <img src="assets/images/cta.jpg" alt="Traveller holding passports and boarding documents">
+      <div class="cta__float">
+        <span><i class="fa-solid fa-passport"></i></span>
+        <div>
+          <strong>40K+ Visas</strong>
+          <small>Successfully approved</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq section" id="faq">
+  <div class="container faq__grid">
+    <div class="faq__intro" data-reveal>
+      <span class="eyebrow"><i class="fa-solid fa-plane-up"></i> Frequently Asked</span>
+      <h2 class="sec-title sec-title--left"><span class="sec-title__ghost">Answers Of</span>Your Common Questions</h2>
+      <p>Everything applicants ask us most often, answered plainly. Still unsure about something? Our advisors reply within one business day.</p>
+      <div class="faq__media" aria-hidden="true">
+        <span class="faq__flag"></span>
+        <svg class="faq__path" viewBox="0 0 440 200" preserveAspectRatio="none">
+          <path d="M20 178 C 130 168, 250 130, 400 24" fill="none" stroke="#0b1f5c" stroke-opacity=".35"
+                stroke-width="3" stroke-linecap="round" stroke-dasharray="1 14"/>
+        </svg>
+        <span class="faq__plane"><i class="fa-solid fa-plane"></i></span>
+      </div>
+    </div>
+
+    <div class="faq__accordion" id="accordion" data-reveal data-delay="150">
+      <div class="acc-item is-open">
+        <button class="acc-head" type="button">How do you help with international job placements?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>We match your skills, qualifications and experience against live vacancies from our partner employers abroad, then support you through applications, interviews and the work-permit process.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">What does the recruitment process involve?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>It starts with a free profile assessment, followed by CV preparation, employer shortlisting, interview coaching and, once you have an offer, full visa and relocation support.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">What documents are required for a student visa?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>Most applications need a valid passport, academic transcripts, proof of funds, an offer letter from your institution, language test results and medical clearance. You receive a personalised checklist after your first consultation.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">How long does student visa processing take?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>Timelines vary by destination, but most student visas are decided within four to twelve weeks once a complete application is submitted. We advise applying well ahead of your intake date.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">What are the requirements for immigration?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>Requirements depend on the country and the stream, and are usually based on age, education, work experience, language ability and proof of funds. Your free assessment will confirm which routes you qualify for.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow"><i class="fa-solid fa-plane-up"></i> Testimonials</span>
+      <h2 class="sec-title"><span class="sec-title__ghost">What Our Amazing</span>Clients Say About Us</h2>
+    </div>
+
+    <div class="tslider" data-reveal>
+      <div class="tslider__viewport">
+        <div class="tslider__track" id="tTrack">
+          <div class="tslide">
+            <article class="t-card">
+              <span class="t-card__quote"><i class="fa-solid fa-quote-right"></i></span>
+              <p>Working with my family overseas seemed impossible until SxopeHit mapped out the sponsorship route. Every document was checked twice and approval came through in four months.</p>
+              <div class="t-card__foot">
+                <img src="assets/images/t1.jpg" alt="Ashley Ryan Gardner">
+                <div>
+                  <strong>Ashley Ryan Gardner</strong>
+                  <small>Los Angeles, USA</small>
+                </div>
+              </div>
+              <div class="t-card__rating">Rating <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+            </article>
+          </div>
+          <div class="tslide">
+            <article class="t-card">
+              <span class="t-card__quote"><i class="fa-solid fa-quote-right"></i></span>
+              <p>Getting my permanent residency was a long road, but the team made it manageable. They explained each stage in plain language and never left a question unanswered.</p>
+              <div class="t-card__foot">
+                <img src="assets/images/t2.jpg" alt="Jonathon Hopkins">
+                <div>
+                  <strong>Jonathon Hopkins</strong>
+                  <small>British Columbia, Canada</small>
+                </div>
+              </div>
+              <div class="t-card__rating">Rating <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+            </article>
+          </div>
+          <div class="tslide">
+            <article class="t-card">
+              <span class="t-card__quote"><i class="fa-solid fa-quote-right"></i></span>
+              <p>I always dreamed of studying in Japan. SxopeHit handled the university paperwork, the financial proof and the interview prep, and my student visa was approved first time.</p>
+              <div class="t-card__foot">
+                <img src="assets/images/t3.jpg" alt="Miranda Ballinger">
+                <div>
+                  <strong>Miranda Ballinger</strong>
+                  <small>University of Toronto, Canada</small>
+                </div>
+              </div>
+              <div class="t-card__rating">Rating <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+            </article>
+          </div>
+          <div class="tslide">
+            <article class="t-card">
+              <span class="t-card__quote"><i class="fa-solid fa-quote-right"></i></span>
+              <p>My first application was refused elsewhere. SxopeHit found the gap in the evidence, rebuilt the case and the work permit came through eleven weeks later. Genuinely grateful.</p>
+              <div class="t-card__foot">
+                <img src="assets/images/t4.jpg" alt="Bilal Ahmed Qureshi">
+                <div>
+                  <strong>Bilal Ahmed Qureshi</strong>
+                  <small>Dubai, UAE</small>
+                </div>
+              </div>
+              <div class="t-card__rating">Rating <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+            </article>
+          </div>
+          <div class="tslide">
+            <article class="t-card">
+              <span class="t-card__quote"><i class="fa-solid fa-quote-right"></i></span>
+              <p>Clear pricing, no false promises and a consultant who actually picked up the phone. That combination is rare in this industry and it made all the difference.</p>
+              <div class="t-card__foot">
+                <img src="assets/images/t5.jpg" alt="Sana Iqbal">
+                <div>
+                  <strong>Sana Iqbal</strong>
+                  <small>Melbourne, Australia</small>
+                </div>
+              </div>
+              <div class="t-card__rating">Rating <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="tslider__nav">
+        <button id="tPrev" aria-label="Previous testimonial"><i class="fa-solid fa-angle-left"></i></button>
+        <div class="tslider__dots" id="tDots"></div>
+        <button id="tNext" aria-label="Next testimonial"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marqueeTrack">
+    <div class="marquee__group">
+      <span>Business Visa</span><i class="fa-solid fa-star"></i>
+      <span>Permanent Residentship</span><i class="fa-solid fa-star"></i>
+      <span>Tourist Visa</span><i class="fa-solid fa-star"></i>
+      <span>Student Visa</span><i class="fa-solid fa-star"></i>
+      <span>Work Permit</span><i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONTACT / APPOINTMENT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__media">
+    <img src="assets/images/contact.jpg" alt="Consultant meeting a client in the office">
+  </div>
+  <div class="contact__panel">
+    <div class="contact__inner" data-reveal>
+      <span class="eyebrow eyebrow--light"><i class="fa-solid fa-plane-up"></i> Get In Touch</span>
+      <h2>Need Help Getting Started?</h2>
+      <p>Tell us where you want to go and we will come back with a clear plan, realistic timelines and a fixed quote.</p>
+
+      <form class="appt-form" id="apptForm" novalidate>
+        <div class="field">
+          <label for="f-country">Select Country</label>
+          <div class="select-wrap">
+            <select id="f-country" required>
+              <option value="">Choose a country</option>
+              <option>Canada</option><option>Australia</option><option>United States</option>
+              <option>Japan</option><option>United Kingdom</option><option>Germany</option>
+            </select>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-service">Select Service</label>
+          <div class="select-wrap">
+            <select id="f-service" required>
+              <option value="">Choose a service</option>
+              <option>Recruitment Services</option><option>Student Visa Consultancy</option>
+              <option>Immigration Services</option><option>Investment &amp; Citizenship</option>
+            </select>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-name">Your Name</label>
+          <input type="text" id="f-name" placeholder="Enter your full name" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Email Address</label>
+          <input type="email" id="f-email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone Number</label>
+          <input type="tel" id="f-phone" placeholder="+1 000 000 0000" required>
+        </div>
+        <div class="field">
+          <label for="f-date">Preferred Date</label>
+          <input type="date" id="f-date" required>
+        </div>
+        <div class="field field--full">
+          <label for="f-msg">Your Message</label>
+          <textarea id="f-msg" rows="3" placeholder="Tell us briefly about your situation"></textarea>
+        </div>
+        <div class="field field--full">
+          <button type="submit" class="btn btn--red btn--lg btn--block">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="blog section" id="blog">
+  <div class="container">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow"><i class="fa-solid fa-plane-up"></i> News &amp; Blog</span>
+      <h2 class="sec-title"><span class="sec-title__ghost">Read Our Latest</span>News &amp; Articles</h2>
+    </div>
+
+    <div class="blog__grid">
+      <article class="post post--lead" data-reveal>
+        <a href="#" class="post__media">
+          <img src="assets/images/blog-1.jpg" alt="Student researching universities abroad">
+          <span class="post__date"><strong>18</strong><small>Sep</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta"><span><i class="fa-regular fa-user"></i> Admin</span><span><i class="fa-regular fa-folder"></i> Student Visa</span></div>
+          <h3><a href="#">How to be selected in the best university for your United Studies</a></h3>
+          <a href="#" class="link-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <div class="blog__side">
+      <article class="post post--row" data-reveal data-delay="100">
+        <a href="#" class="post__media">
+          <img src="assets/images/blog-2.jpg" alt="Consultants preparing for an interview">
+          <span class="post__date"><strong>12</strong><small>Sep</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta"><span><i class="fa-regular fa-user"></i> Admin</span><span><i class="fa-regular fa-folder"></i> Recruitment</span></div>
+          <h3><a href="#">How to stand out when applying for jobs overseas</a></h3>
+          <a href="#" class="link-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post post--row" data-reveal data-delay="200">
+        <a href="#" class="post__media">
+          <img src="assets/images/blog-3.jpg" alt="Aircraft preparing for departure">
+          <span class="post__date"><strong>04</strong><small>Sep</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta"><span><i class="fa-regular fa-user"></i> Admin</span><span><i class="fa-regular fa-folder"></i> Immigration</span></div>
+          <h3><a href="#">Know what documents you need before the upcoming visa interview</a></h3>
+          <a href="#" class="link-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container footer__top-inner">
+      <a href="index.html" class="brand brand--light">
+        <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+      </a>
+      <form class="newsletter" id="newsletterForm" novalidate>
+        <label for="nl-email" class="newsletter__label">Sign up to our newsletter for the latest immigration updates</label>
+        <div class="newsletter__field">
+          <input type="email" id="nl-email" placeholder="Enter your email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <p class="form-note" id="nlNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer__grid">
+    <div class="footer__col footer__col--intro">
+      <p class="footer__about">SxopeHit helps professionals, students, families and businesses navigate international recruitment, immigration and student visa processes.</p>
+      <div class="socials socials--light">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Our Services</h4>
+      <ul class="footer__links">
+        <li><a href="service-recruitment.html">Recruitment Services</a></li>
+        <li><a href="service-student-visa.html">Student Visa Consultancy</a></li>
+        <li><a href="service-immigration.html">Immigration Services</a></li>
+        <li><a href="service-investment.html">Investment &amp; Citizenship</a></li>
+        <li><a href="services.html">All Services</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Useful Links</h4>
+      <ul class="footer__links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQ</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Get In Touch</h4>
+      <ul class="footer__contact">
+        <li><i class="fa-solid fa-location-dot"></i> <span>Office #105, 2nd floor, Chaudhary Center Sodhiwal, Near Yateem Khana, Multan Road, Lahore, Pakistan</span></li>
+        <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:+923200557755">+92 3200557 755</a></li>
+        <li><i class="fa-regular fa-envelope"></i> <span><a href="mailto:support@sxopehit.com">support@sxopehit.com</a><br><a href="mailto:hr@sxopehit.com">hr@sxopehit.com</a></span></li>
+        <li><i class="fa-regular fa-clock"></i> <span>Mon &ndash; Sat: 9.00am &ndash; 06.00pm<br><span class="footer__muted">Sunday: Closed</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>Copyright &copy; <span data-year>2026</span> SxopeHit. All rights reserved.copy; <span data-year>2026</span> SxopeHit. All Rights Reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 40 40"><circle class="to-top__track" cx="20" cy="20" r="18"></circle><circle class="to-top__bar" cx="20" cy="20" r="18" id="toTopBar"></circle></svg>
+  <i class="fa-solid fa-angle-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

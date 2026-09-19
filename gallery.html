@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Photos from inside SxopeHit - candidate briefings, trade tests, employer meetings and pre-departure sessions across Pakistan and the Gulf.">
+<title>Gallery | SxopeHit Offices, Trade Tests &amp; Departures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <span class="preloader__plane"><i class="fa-solid fa-paper-plane"></i></span>
+    <span class="preloader__bar"><i></i></span>
+  </div>
+</div>
+
+<!-- ============ SEARCH POPUP ============ -->
+<div class="search-popup" id="searchPopup">
+  <button class="search-popup__close" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-popup__form" onsubmit="return false;">
+    <input type="search" placeholder="Type keyword and hit enter..." aria-label="Search">
+    <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <div class="mobile-nav__head">
+    <a href="index.html" class="brand brand--light">
+      <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+    </a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mobile-nav__menu">
+    <ul class="m-menu">
+      <li class="has-children"><a href="index.html">Home</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="index.html">Home One</a></li><li><a href="#">Home Two</a></li><li><a href="#">Home Three</a></li></ul>
+      </li>
+      <li class="has-children"><a href="#">Pages</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faqs.html">FAQ</a></li></ul>
+      </li>
+      <li class="has-children"><a href="services.html">Services</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="service-recruitment.html">Recruitment Services</a></li><li><a href="service-student-visa.html">Student Visa Consultancy</a></li><li><a href="service-immigration.html">Immigration Services</a></li><li><a href="service-investment.html">Investment &amp; Citizenship</a></li></ul>
+      </li>
+      <li class="has-children"><a href="blog.html">Blog</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="blog.html">Blog Grid</a></li><li><a href="blog-details.html">Blog Details</a></li></ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav__foot">
+    <a href="tel:+923200557755" class="mobile-nav__call"><i class="fa-solid fa-phone"></i> +92 3200557 755</a>
+    <div class="socials socials--light">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ HEADER + HERO (overlay header on a boxed hero) ============ -->
+<div class="page-top">
+
+  <header class="site-header" id="siteHeader">
+    <div class="topbar">
+      <div class="topbar__inner">
+        <ul class="topbar__meta">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:support@sxopehit.com">support@sxopehit.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Multan Road, Lahore, Pakistan</li>
+        </ul>
+        <div class="topbar__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar" id="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+        </a>
+
+        <div class="navpill">
+          <nav class="mainmenu" aria-label="Main navigation">
+            <ul>
+              <li class="has-drop"><a href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="index.html">Home One</a></li>
+                  <li><a href="#">Home Two</a></li>
+                  <li><a href="#">Home Three</a></li>
+                </ul>
+              </li>
+              <li class="has-drop is-active"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="faqs.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="has-drop"><a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="service-recruitment.html">Recruitment Services</a></li>
+                  <li><a href="service-student-visa.html">Student Visa Consultancy</a></li>
+                  <li><a href="service-immigration.html">Immigration Services</a></li>
+                  <li><a href="service-investment.html">Investment &amp; Citizenship</a></li>
+                  <li><a href="services.html">All Services</a></li>
+                </ul>
+              </li>
+                            <li class="has-drop"><a href="blog.html">Blog <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="blog.html">Blog Grid</a></li>
+                  <li><a href="blog-details.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="navpill__tools">
+            <button class="pill-icon" id="searchToggle" aria-label="Open search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="pill-icon" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+            <a href="tel:+923200557755" class="phone-btn"><i class="fa-solid fa-comment-dots"></i> +92 3200557 755</a>
+          </div>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <section class="page-banner">
+    <img class="page-banner__bg" src="assets/images/about-hero.jpg" alt="SxopeHit offices and test centres" fetchpriority="high" decoding="async" width="2200" height="1100">
+    <div class="page-banner__overlay"></div>
+    <div class="container">
+      <div class="page-banner__content">
+        <span class="hero__badge">38 Photos</span>
+        <h1>Our Gallery</h1>
+        <p>Inside our offices, trade tests and pre-departure briefings across Pakistan and the Gulf.</p>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span aria-current="page">Gallery</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery section">
+  <div class="container">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> Life At SxopeHit</span>
+      <h2 class="sec-title-plain">Moments From Our Offices</h2>
+      <p class="sec-head__sub">Candidate briefings, trade tests, employer meetings and departures &mdash; 38 moments from our offices and test centres. Select any photo to view it full size.</p>
+    </div>
+
+    <div class="gallery__grid" id="galleryGrid">
+      <button class="gitem" type="button" data-full="assets/images/gallery/g00.jpg" data-index="0" data-reveal aria-label="View photo 1 of 38">
+        <img src="assets/images/gallery/g00-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 1" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g01.jpg" data-index="1" data-reveal data-delay="60" aria-label="View photo 2 of 38">
+        <img src="assets/images/gallery/g01-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 2" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g02.jpg" data-index="2" data-reveal data-delay="120" aria-label="View photo 3 of 38">
+        <img src="assets/images/gallery/g02-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 3" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g03.jpg" data-index="3" data-reveal aria-label="View photo 4 of 38">
+        <img src="assets/images/gallery/g03-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 4" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g04.jpg" data-index="4" data-reveal data-delay="60" aria-label="View photo 5 of 38">
+        <img src="assets/images/gallery/g04-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 5" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g05.jpg" data-index="5" data-reveal data-delay="120" aria-label="View photo 6 of 38">
+        <img src="assets/images/gallery/g05-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 6" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g06.jpg" data-index="6" data-reveal aria-label="View photo 7 of 38">
+        <img src="assets/images/gallery/g06-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 7" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g07.jpg" data-index="7" data-reveal data-delay="60" aria-label="View photo 8 of 38">
+        <img src="assets/images/gallery/g07-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 8" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g08.jpg" data-index="8" data-reveal data-delay="120" aria-label="View photo 9 of 38">
+        <img src="assets/images/gallery/g08-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 9" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g09.jpg" data-index="9" data-reveal aria-label="View photo 10 of 38">
+        <img src="assets/images/gallery/g09-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 10" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g10.jpg" data-index="10" data-reveal data-delay="60" aria-label="View photo 11 of 38">
+        <img src="assets/images/gallery/g10-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 11" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g11.jpg" data-index="11" data-reveal data-delay="120" aria-label="View photo 12 of 38">
+        <img src="assets/images/gallery/g11-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 12" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g12.jpg" data-index="12" data-reveal aria-label="View photo 13 of 38">
+        <img src="assets/images/gallery/g12-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 13" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g13.jpg" data-index="13" data-reveal data-delay="60" aria-label="View photo 14 of 38">
+        <img src="assets/images/gallery/g13-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 14" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g14.jpg" data-index="14" data-reveal data-delay="120" aria-label="View photo 15 of 38">
+        <img src="assets/images/gallery/g14-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 15" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g15.jpg" data-index="15" data-reveal aria-label="View photo 16 of 38">
+        <img src="assets/images/gallery/g15-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 16" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g16.jpg" data-index="16" data-reveal data-delay="60" aria-label="View photo 17 of 38">
+        <img src="assets/images/gallery/g16-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 17" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g17.jpg" data-index="17" data-reveal data-delay="120" aria-label="View photo 18 of 38">
+        <img src="assets/images/gallery/g17-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 18" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g18.jpg" data-index="18" data-reveal aria-label="View photo 19 of 38">
+        <img src="assets/images/gallery/g18-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 19" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g19.jpg" data-index="19" data-reveal data-delay="60" aria-label="View photo 20 of 38">
+        <img src="assets/images/gallery/g19-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 20" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g20.jpg" data-index="20" data-reveal data-delay="120" aria-label="View photo 21 of 38">
+        <img src="assets/images/gallery/g20-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 21" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g21.jpg" data-index="21" data-reveal aria-label="View photo 22 of 38">
+        <img src="assets/images/gallery/g21-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 22" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g22.jpg" data-index="22" data-reveal data-delay="60" aria-label="View photo 23 of 38">
+        <img src="assets/images/gallery/g22-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 23" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g23.jpg" data-index="23" data-reveal data-delay="120" aria-label="View photo 24 of 38">
+        <img src="assets/images/gallery/g23-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 24" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g24.jpg" data-index="24" data-reveal aria-label="View photo 25 of 38">
+        <img src="assets/images/gallery/g24-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 25" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g25.jpg" data-index="25" data-reveal data-delay="60" aria-label="View photo 26 of 38">
+        <img src="assets/images/gallery/g25-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 26" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g26.jpg" data-index="26" data-reveal data-delay="120" aria-label="View photo 27 of 38">
+        <img src="assets/images/gallery/g26-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 27" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g27.jpg" data-index="27" data-reveal aria-label="View photo 28 of 38">
+        <img src="assets/images/gallery/g27-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 28" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g28.jpg" data-index="28" data-reveal data-delay="60" aria-label="View photo 29 of 38">
+        <img src="assets/images/gallery/g28-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 29" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g29.jpg" data-index="29" data-reveal data-delay="120" aria-label="View photo 30 of 38">
+        <img src="assets/images/gallery/g29-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 30" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g30.jpg" data-index="30" data-reveal aria-label="View photo 31 of 38">
+        <img src="assets/images/gallery/g30-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 31" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g31.jpg" data-index="31" data-reveal data-delay="60" aria-label="View photo 32 of 38">
+        <img src="assets/images/gallery/g31-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 32" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g32.jpg" data-index="32" data-reveal data-delay="120" aria-label="View photo 33 of 38">
+        <img src="assets/images/gallery/g32-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 33" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g33.jpg" data-index="33" data-reveal aria-label="View photo 34 of 38">
+        <img src="assets/images/gallery/g33-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 34" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g34.jpg" data-index="34" data-reveal data-delay="60" aria-label="View photo 35 of 38">
+        <img src="assets/images/gallery/g34-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 35" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g35.jpg" data-index="35" data-reveal data-delay="120" aria-label="View photo 36 of 38">
+        <img src="assets/images/gallery/g35-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 36" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g36.jpg" data-index="36" data-reveal aria-label="View photo 37 of 38">
+        <img src="assets/images/gallery/g36-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 37" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+      <button class="gitem" type="button" data-full="assets/images/gallery/g37.jpg" data-index="37" data-reveal data-delay="60" aria-label="View photo 38 of 38">
+        <img src="assets/images/gallery/g37-t.jpg" alt="SxopeHit office, trade test and pre-departure moment 38" width="450" height="450" loading="lazy" decoding="async">
+        <span class="gitem__zoom"><i class="fa-solid fa-expand"></i></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery viewer">
+  <button class="lightbox__close" id="lbClose" aria-label="Close viewer"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous photo"><i class="fa-solid fa-angle-left"></i></button>
+  <figure class="lightbox__stage">
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCount"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next photo"><i class="fa-solid fa-angle-right"></i></button>
+</div><!-- ============ CTA BANNER ============ -->
+<section class="acta">
+  <div class="container">
+    <div class="acta__inner" data-reveal>
+      <img class="acta__bg" src="assets/images/cta-london.jpg" alt="" aria-hidden="true" width="1600" height="900" loading="lazy">
+      <div class="acta__overlay"></div>
+      <div class="acta__content">
+        <span class="hero__badge">Free 30-Minute Assessment</span>
+        <h2>Your Path to a New <br>Future Starts Here</h2>
+        <p>Book a free consultation with one of our experts today.</p>
+        <div class="acta__actions">
+          <a href="contact.html" class="btn btn--red btn--lg">Schedule Consultation <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="tel:+923200557755" class="acta__call"><i class="fa-solid fa-phone-volume"></i> +92 3200557 755</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container footer__top-inner">
+      <a href="index.html" class="brand brand--light">
+        <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+      </a>
+      <form class="newsletter" id="newsletterForm" novalidate>
+        <label for="nl-email" class="newsletter__label">Sign up to our newsletter for the latest immigration updates</label>
+        <div class="newsletter__field">
+          <input type="email" id="nl-email" placeholder="Enter your email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <p class="form-note" id="nlNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer__grid">
+    <div class="footer__col footer__col--intro">
+      <p class="footer__about">SxopeHit helps professionals, students, families and businesses navigate international recruitment, immigration and student visa processes.</p>
+      <div class="socials socials--light">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Our Services</h4>
+      <ul class="footer__links">
+        <li><a href="service-recruitment.html">Recruitment Services</a></li>
+        <li><a href="service-student-visa.html">Student Visa Consultancy</a></li>
+        <li><a href="service-immigration.html">Immigration Services</a></li>
+        <li><a href="service-investment.html">Investment &amp; Citizenship</a></li>
+        <li><a href="services.html">All Services</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Useful Links</h4>
+      <ul class="footer__links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Get In Touch</h4>
+      <ul class="footer__contact">
+        <li><i class="fa-solid fa-location-dot"></i> <span>Office #105, 2nd floor, Chaudhary Center Sodhiwal, Near Yateem Khana, Multan Road, Lahore, Pakistan</span></li>
+        <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:+923200557755">+92 3200557 755</a></li>
+        <li><i class="fa-regular fa-envelope"></i> <span><a href="mailto:support@sxopehit.com">support@sxopehit.com</a><br><a href="mailto:hr@sxopehit.com">hr@sxopehit.com</a></span></li>
+        <li><i class="fa-regular fa-clock"></i> <span>Mon &ndash; Sat: 9.00am &ndash; 06.00pm<br><span class="footer__muted">Sunday: Closed</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>Copyright &copy; <span data-year>2026</span> SxopeHit. All rights reserved.copy; <span data-year>2026</span> SxopeHit. All Rights Reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 40 40"><circle class="to-top__track" cx="20" cy="20" r="18"></circle><circle class="to-top__bar" cx="20" cy="20" r="18" id="toTopBar"></circle></svg>
+  <i class="fa-solid fa-angle-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Four service pillars from SxopeHit - overseas recruitment, student visa consultancy, immigration services and investment and citizenship, handled end to end.">
+<title>Our Services | SxopeHit Recruitment, Student Visa, Immigration &amp; Investment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <span class="preloader__plane"><i class="fa-solid fa-paper-plane"></i></span>
+    <span class="preloader__bar"><i></i></span>
+  </div>
+</div>
+
+<!-- ============ SEARCH POPUP ============ -->
+<div class="search-popup" id="searchPopup">
+  <button class="search-popup__close" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-popup__form" onsubmit="return false;">
+    <input type="search" placeholder="Type keyword and hit enter..." aria-label="Search">
+    <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <div class="mobile-nav__head">
+    <a href="index.html" class="brand brand--light">
+      <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+    </a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mobile-nav__menu">
+    <ul class="m-menu">
+      <li class="has-children"><a href="index.html">Home</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="index.html">Home One</a></li><li><a href="#">Home Two</a></li><li><a href="#">Home Three</a></li></ul>
+      </li>
+      <li class="has-children"><a href="#">Pages</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faqs.html">FAQ</a></li></ul>
+      </li>
+      <li class="has-children"><a href="services.html">Services</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="service-recruitment.html">Recruitment Services</a></li><li><a href="service-student-visa.html">Student Visa Consultancy</a></li><li><a href="service-immigration.html">Immigration Services</a></li><li><a href="service-investment.html">Investment &amp; Citizenship</a></li></ul>
+      </li>
+      <li class="has-children"><a href="blog.html">Blog</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="blog.html">Blog Grid</a></li><li><a href="blog-details.html">Blog Details</a></li></ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav__foot">
+    <a href="tel:+923200557755" class="mobile-nav__call"><i class="fa-solid fa-phone"></i> +92 3200557 755</a>
+    <div class="socials socials--light">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ HEADER + HERO (overlay header on a boxed hero) ============ -->
+<div class="page-top">
+
+  <header class="site-header" id="siteHeader">
+    <div class="topbar">
+      <div class="topbar__inner">
+        <ul class="topbar__meta">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:support@sxopehit.com">support@sxopehit.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Multan Road, Lahore, Pakistan</li>
+        </ul>
+        <div class="topbar__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar" id="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+        </a>
+
+        <div class="navpill">
+          <nav class="mainmenu" aria-label="Main navigation">
+            <ul>
+              <li class="has-drop"><a href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="index.html">Home One</a></li>
+                  <li><a href="#">Home Two</a></li>
+                  <li><a href="#">Home Three</a></li>
+                </ul>
+              </li>
+              <li class="has-drop"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="faqs.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="has-drop is-active"><a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="service-recruitment.html">Recruitment Services</a></li>
+                  <li><a href="service-student-visa.html">Student Visa Consultancy</a></li>
+                  <li><a href="service-immigration.html">Immigration Services</a></li>
+                  <li><a href="service-investment.html">Investment &amp; Citizenship</a></li>
+                  <li><a href="services.html">All Services</a></li>
+                </ul>
+              </li>
+                            <li class="has-drop"><a href="blog.html">Blog <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="blog.html">Blog Grid</a></li>
+                  <li><a href="blog-details.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="navpill__tools">
+            <button class="pill-icon" id="searchToggle" aria-label="Open search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="pill-icon" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+            <a href="tel:+923200557755" class="phone-btn"><i class="fa-solid fa-comment-dots"></i> +92 3200557 755</a>
+          </div>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <section class="page-banner">
+    <img class="page-banner__bg" src="assets/images/about-hero.jpg"
+         alt="SxopeHit advisers with clients" fetchpriority="high" decoding="async" width="2200" height="1100">
+    <div class="page-banner__overlay"></div>
+    <div class="container">
+      <div class="page-banner__content">
+        <span class="hero__badge">What We Provide</span>
+        <h1>Our Services</h1>
+        <p>We are always offering opportunities for growth &mdash; committed to empowering individuals and businesses with innovative solutions and unmatched professional opportunities.</p>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span aria-current="page">Services</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============ FOUR PILLARS ============ -->
+<section class="pillars section" id="services">
+  <div class="container">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> At A Glance</span>
+      <h2 class="sec-title-plain">Four Pillars, One Accountable Partner</h2>
+      <p class="sec-head__sub">A single, accountable partner for every stage of your international journey &mdash; from the first consultation to your arrival abroad.</p>
+    </div>
+
+    <div class="pillars__grid">
+      <article class="pillar" data-reveal>
+        <a class="pillar__media" href="service-recruitment.html">
+          <img src="assets/images/svc-recruitment.jpg" alt="Recruitment services" width="1200" height="900" loading="lazy">
+          <span class="pillar__num">01</span>
+        </a>
+        <div class="pillar__body">
+          <h3><a href="service-recruitment.html">Recruitment Services</a></h3>
+          <p>Connect with international employers and discover career opportunities that match your skills, experience and professional goals.</p>
+          <a href="service-recruitment.html" class="link-more link-more--diag">Explore Service <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="pillar" data-reveal data-delay="90">
+        <a class="pillar__media" href="service-student-visa.html">
+          <img src="assets/images/svc-student.jpg" alt="Student visa consultancy" width="1200" height="900" loading="lazy">
+          <span class="pillar__num">02</span>
+        </a>
+        <div class="pillar__body">
+          <h3><a href="service-student-visa.html">Student Visa Consultancy</a></h3>
+          <p>Expert guidance for university selection, visa documentation, applications and your journey to study abroad with confidence.</p>
+          <a href="service-student-visa.html" class="link-more link-more--diag">Explore Service <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="pillar" data-reveal data-delay="180">
+        <a class="pillar__media" href="service-immigration.html">
+          <img src="assets/images/svc-immigration.jpg" alt="Immigration services" width="1200" height="900" loading="lazy">
+          <span class="pillar__num">03</span>
+        </a>
+        <div class="pillar__body">
+          <h3><a href="service-immigration.html">Immigration Services</a></h3>
+          <p>Navigate your visa needs with expert guidance for destinations across Canada, Australia and the UK with confidence.</p>
+          <a href="service-immigration.html" class="link-more link-more--diag">Explore Service <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="pillar" data-reveal data-delay="270">
+        <a class="pillar__media" href="service-investment.html">
+          <img src="assets/images/svc-investment.jpg" alt="Investment and citizenship" width="1200" height="900" loading="lazy">
+          <span class="pillar__num">04</span>
+        </a>
+        <div class="pillar__body">
+          <h3><a href="service-investment.html">Investment &amp; Citizenship</a></h3>
+          <p>Explore investment and residency opportunities with expert guidance tailored to your eligibility and long-term goals.</p>
+          <a href="service-investment.html" class="link-more link-more--diag">Explore Service <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="pillars__note" data-reveal>
+      <div>
+        <strong>Not sure which pathway fits you?</strong>
+        <span>Our advisers will assess your profile free of charge and recommend the strongest route.</span>
+      </div>
+      <a href="contact.html" class="btn btn--red">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK VISA CATEGORIES ============ -->
+<section class="qcats section">
+  <div class="container">
+    <div class="qcats__grid">
+      <article class="qcat" data-reveal>
+        <span class="qcat__icon"><i class="fa-solid fa-umbrella-beach"></i></span>
+        <h3>Tourist Visa</h3>
+        <p>Explore the world, hassle-free</p>
+      </article>
+      <article class="qcat" data-reveal data-delay="80">
+        <span class="qcat__icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <h3>Student Visa</h3>
+        <p>Study at top global universities</p>
+      </article>
+      <article class="qcat" data-reveal data-delay="160">
+        <span class="qcat__icon"><i class="fa-solid fa-briefcase"></i></span>
+        <h3>Business Visa</h3>
+        <p>Expand across new markets</p>
+      </article>
+      <article class="qcat" data-reveal data-delay="240">
+        <span class="qcat__icon"><i class="fa-solid fa-house-chimney-window"></i></span>
+        <h3>Permanent Residency</h3>
+        <p>Settle abroad with your family</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process section">
+  <div class="container">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> How We Work</span>
+      <h2 class="sec-title-plain">Our Work Process</h2>
+      <p class="sec-head__sub">Four stages, the same for every client, so you always know what happens next.</p>
+    </div>
+
+    <div class="process__grid">
+      <article class="pstep" data-reveal>
+        <span class="pstep__num">01</span>
+        <h3>Profile Assessment</h3>
+        <p>We analyse your skills, qualifications and goals to establish what you are genuinely eligible for.</p>
+      </article>
+      <article class="pstep" data-reveal data-delay="90">
+        <span class="pstep__num">02</span>
+        <h3>Matching &amp; Shortlisting</h3>
+        <p>You are matched to appropriate career opportunities, institutions or immigration routes.</p>
+      </article>
+      <article class="pstep" data-reveal data-delay="180">
+        <span class="pstep__num">03</span>
+        <h3>Application &amp; Interview</h3>
+        <p>We guide you through submission, documentation and interview preparation.</p>
+      </article>
+      <article class="pstep" data-reveal data-delay="270">
+        <span class="pstep__num">04</span>
+        <h3>Onboarding &amp; Departure</h3>
+        <p>Support continues through onboarding, pre-departure briefing and arrival.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ADDITIONAL SERVICES ============ -->
+<section class="addsvc section">
+  <div class="container">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> Also Available</span>
+      <h2 class="sec-title-plain">Additional Services</h2>
+      <p class="sec-head__sub">Individual applications handled end to end, whether or not you are working with us on a wider programme.</p>
+    </div>
+
+    <div class="addsvc__grid">
+      <div class="addsvc__item" data-reveal><i class="fa-solid fa-check"></i> PR Applications</div>
+      <div class="addsvc__item" data-reveal data-delay="60"><i class="fa-solid fa-check"></i> Business Visa Processing</div>
+      <div class="addsvc__item" data-reveal data-delay="120"><i class="fa-solid fa-check"></i> Migration Appeal</div>
+      <div class="addsvc__item" data-reveal><i class="fa-solid fa-check"></i> Travel Applications</div>
+      <div class="addsvc__item" data-reveal data-delay="60"><i class="fa-solid fa-check"></i> Tourist Visa Processing</div>
+      <div class="addsvc__item" data-reveal data-delay="120"><i class="fa-solid fa-check"></i> Overseas Employment</div>
+    </div>
+  </div>
+</section>
+<!-- ============ CTA BANNER ============ -->
+<section class="acta">
+  <div class="container">
+    <div class="acta__inner" data-reveal>
+      <img class="acta__bg" src="assets/images/cta-london.jpg" alt="" aria-hidden="true" width="1600" height="900" loading="lazy">
+      <div class="acta__overlay"></div>
+      <div class="acta__content">
+        <span class="hero__badge">Free 30-Minute Assessment</span>
+        <h2>Your Path to a New <br>Future Starts Here</h2>
+        <p>Book a free consultation with one of our experts today.</p>
+        <div class="acta__actions">
+          <a href="contact.html" class="btn btn--red btn--lg">Schedule Consultation <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="tel:+923200557755" class="acta__call"><i class="fa-solid fa-phone-volume"></i> +92 3200557 755</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container footer__top-inner">
+      <a href="index.html" class="brand brand--light">
+        <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+      </a>
+      <form class="newsletter" id="newsletterForm" novalidate>
+        <label for="nl-email" class="newsletter__label">Sign up to our newsletter for the latest immigration updates</label>
+        <div class="newsletter__field">
+          <input type="email" id="nl-email" placeholder="Enter your email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <p class="form-note" id="nlNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer__grid">
+    <div class="footer__col footer__col--intro">
+      <p class="footer__about">SxopeHit helps professionals, students, families and businesses navigate international recruitment, immigration and student visa processes.</p>
+      <div class="socials socials--light">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Our Services</h4>
+      <ul class="footer__links">
+        <li><a href="service-recruitment.html">Recruitment Services</a></li>
+        <li><a href="service-student-visa.html">Student Visa Consultancy</a></li>
+        <li><a href="service-immigration.html">Immigration Services</a></li>
+        <li><a href="service-investment.html">Investment &amp; Citizenship</a></li>
+        <li><a href="services.html">All Services</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Useful Links</h4>
+      <ul class="footer__links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Get In Touch</h4>
+      <ul class="footer__contact">
+        <li><i class="fa-solid fa-location-dot"></i> <span>Office #105, 2nd floor, Chaudhary Center Sodhiwal, Near Yateem Khana, Multan Road, Lahore, Pakistan</span></li>
+        <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:+923200557755">+92 3200557 755</a></li>
+        <li><i class="fa-regular fa-envelope"></i> <span><a href="mailto:support@sxopehit.com">support@sxopehit.com</a><br><a href="mailto:hr@sxopehit.com">hr@sxopehit.com</a></span></li>
+        <li><i class="fa-regular fa-clock"></i> <span>Mon &ndash; Sat: 9.00am &ndash; 06.00pm<br><span class="footer__muted">Sunday: Closed</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>Copyright &copy; <span data-year>2026</span> SxopeHit. All rights reserved.copy; <span data-year>2026</span> SxopeHit. All Rights Reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 40 40"><circle class="to-top__track" cx="20" cy="20" r="18"></circle><circle class="to-top__bar" cx="20" cy="20" r="18" id="toTopBar"></circle></svg>
+  <i class="fa-solid fa-angle-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>

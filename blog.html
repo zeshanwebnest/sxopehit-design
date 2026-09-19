@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guidance on recruitment, student visas and immigration from the SxopeHit team that handles the applications.">
+<title>Blog | SxopeHit Recruitment, Student Visa &amp; Immigration Insights</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <span class="preloader__plane"><i class="fa-solid fa-paper-plane"></i></span>
+    <span class="preloader__bar"><i></i></span>
+  </div>
+</div>
+
+<!-- ============ SEARCH POPUP ============ -->
+<div class="search-popup" id="searchPopup">
+  <button class="search-popup__close" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-popup__form" onsubmit="return false;">
+    <input type="search" placeholder="Type keyword and hit enter..." aria-label="Search">
+    <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <div class="mobile-nav__head">
+    <a href="index.html" class="brand brand--light">
+      <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+    </a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mobile-nav__menu">
+    <ul class="m-menu">
+      <li class="has-children"><a href="index.html">Home</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="index.html">Home One</a></li><li><a href="#">Home Two</a></li><li><a href="#">Home Three</a></li></ul>
+      </li>
+      <li class="has-children"><a href="#">Pages</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="faqs.html">FAQ</a></li></ul>
+      </li>
+      <li class="has-children"><a href="services.html">Services</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="service-recruitment.html">Recruitment Services</a></li><li><a href="service-student-visa.html">Student Visa Consultancy</a></li><li><a href="service-immigration.html">Immigration Services</a></li><li><a href="service-investment.html">Investment &amp; Citizenship</a></li></ul>
+      </li>
+      <li class="has-children"><a href="blog.html">Blog</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="blog.html">Blog Grid</a></li><li><a href="blog-details.html">Blog Details</a></li></ul>
+      </li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav__foot">
+    <a href="tel:+923200557755" class="mobile-nav__call"><i class="fa-solid fa-phone"></i> +92 3200557 755</a>
+    <div class="socials socials--light">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ HEADER + HERO (overlay header on a boxed hero) ============ -->
+<div class="page-top">
+
+  <header class="site-header" id="siteHeader">
+    <div class="topbar">
+      <div class="topbar__inner">
+        <ul class="topbar__meta">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:support@sxopehit.com">support@sxopehit.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Multan Road, Lahore, Pakistan</li>
+        </ul>
+        <div class="topbar__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar" id="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="brand">
+          <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+        </a>
+
+        <div class="navpill">
+          <nav class="mainmenu" aria-label="Main navigation">
+            <ul>
+              <li class="has-drop"><a href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="index.html">Home One</a></li>
+                  <li><a href="#">Home Two</a></li>
+                  <li><a href="#">Home Three</a></li>
+                </ul>
+              </li>
+              <li class="has-drop"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="faqs.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="has-drop"><a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="service-recruitment.html">Recruitment Services</a></li>
+                  <li><a href="service-student-visa.html">Student Visa Consultancy</a></li>
+                  <li><a href="service-immigration.html">Immigration Services</a></li>
+                  <li><a href="service-investment.html">Investment &amp; Citizenship</a></li>
+                  <li><a href="services.html">All Services</a></li>
+                </ul>
+              </li>
+                            <li class="has-drop is-active"><a href="blog.html">Blog <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="blog.html">Blog Grid</a></li>
+                  <li><a href="blog-details.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="navpill__tools">
+            <button class="pill-icon" id="searchToggle" aria-label="Open search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="pill-icon" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+            <a href="tel:+923200557755" class="phone-btn"><i class="fa-solid fa-comment-dots"></i> +92 3200557 755</a>
+          </div>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <section class="page-banner">
+    <img class="page-banner__bg" src="assets/images/about-hero.jpg" alt="SxopeHit insights and guidance" fetchpriority="high" decoding="async" width="2200" height="1100">
+    <div class="page-banner__overlay"></div>
+    <div class="container">
+      <div class="page-banner__content">
+        <span class="hero__badge">News &amp; Insights</span>
+        <h1>Our Blog</h1>
+        <p>Guidance on recruitment, student visas and immigration from the team that handles the applications.</p>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span aria-current="page">Blog</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============ BLOG LIST ============ -->
+<section class="bloglist section">
+  <div class="container">
+    <div class="bloglist__grid" id="blogGrid">
+      <article class="post" data-reveal>
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/blog-uk-university.jpg" alt="How to be selected in the top ranked university from all over the United Kingdom" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>11</strong><small>Nov</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Visa Application</span>
+            <span><i class="fa-regular fa-comment"></i> 3 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">How to be selected in the top ranked university from all over the United Kingdom</a></h3>
+          <p class="post__excerpt">Admissions teams read a whole application — the strongest candidates are the ones whose record, statement and documents all tell the same story.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="post" data-reveal data-delay="90">
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/blog-visa-interview.jpg" alt="Smart Strategies for Visa Interview Success: Expert Guidance" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>11</strong><small>Nov</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Work Visa</span>
+            <span><i class="fa-regular fa-comment"></i> 0 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">Smart Strategies for Visa Interview Success: Expert Guidance</a></h3>
+          <p class="post__excerpt">Preparation beats improvisation. What officers actually ask, and how to answer without over-rehearsing.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="post" data-reveal data-delay="180">
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/blog-interview-confidence.jpg" alt="Boost Your Confidence: Professional Tips for Your Upcoming Visa Interview" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>11</strong><small>Nov</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Work Visa</span>
+            <span><i class="fa-regular fa-comment"></i> 0 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">Boost Your Confidence: Professional Tips for Your Upcoming Visa Interview</a></h3>
+          <p class="post__excerpt">Nerves are normal. These are the practical habits that make the difference on the day.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="post" data-reveal>
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/blog-documents.jpg" alt="Documents Required for Overseas Employment" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>28</strong><small>Oct</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Recruitment</span>
+            <span><i class="fa-regular fa-comment"></i> 2 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">Documents Required for Overseas Employment</a></h3>
+          <p class="post__excerpt">Contracts, attestation, medicals and clearances — the paperwork every overseas placement needs.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="post" data-reveal data-delay="90">
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/blog-scams.jpg" alt="How to Avoid Overseas Job Scams" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>14</strong><small>Oct</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Recruitment</span>
+            <span><i class="fa-regular fa-comment"></i> 5 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">How to Avoid Overseas Job Scams</a></h3>
+          <p class="post__excerpt">Warning signs in a job offer, and the checks worth doing before you pay anyone anything.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="post" data-reveal data-delay="180">
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/blog-employers.jpg" alt="Employers: Preparing for International Hiring" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>30</strong><small>Sep</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Employers</span>
+            <span><i class="fa-regular fa-comment"></i> 1 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">Employers: Preparing for International Hiring</a></h3>
+          <p class="post__excerpt">Briefing a recruiter properly, screening against the brief, and what a genuine shortlist looks like.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="post is-hidden" data-reveal>
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/country-canada.jpg" alt="Choosing the Right Study Destination in Canada" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>16</strong><small>Sep</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Student Visa</span>
+            <span><i class="fa-regular fa-comment"></i> 0 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">Choosing the Right Study Destination in Canada</a></h3>
+          <p class="post__excerpt">Province, institution and programme all affect your permit — and your options after graduation.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="post is-hidden" data-reveal data-delay="90">
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/country-japan.jpg" alt="Studying and Working in Japan: A Practical Guide" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>02</strong><small>Sep</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Student Visa</span>
+            <span><i class="fa-regular fa-comment"></i> 4 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">Studying and Working in Japan: A Practical Guide</a></h3>
+          <p class="post__excerpt">Language requirements, part-time work rules and the specified-skill routes after study.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="post is-hidden" data-reveal data-delay="180">
+        <a href="blog-details.html" class="post__media">
+          <img src="assets/images/country-australia.jpg" alt="Australia Immigration: Pathways for Skilled Workers" width="1100" height="760" loading="lazy">
+          <span class="post__date"><strong>19</strong><small>Aug</small></span>
+        </a>
+        <div class="post__body">
+          <div class="post__meta">
+            <span><i class="fa-regular fa-folder"></i> Immigration</span>
+            <span><i class="fa-regular fa-comment"></i> 2 Comments</span>
+          </div>
+          <h3><a href="blog-details.html">Australia Immigration: Pathways for Skilled Workers</a></h3>
+          <p class="post__excerpt">Points testing, state nomination and regional routes explained without the jargon.</p>
+          <a href="blog-details.html" class="link-more link-more--diag">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+    <div class="bloglist__more">
+      <button class="btn btn--red btn--lg" id="loadMore" type="button">Load More Articles <i class="fa-solid fa-arrow-down"></i></button>
+      <p class="bloglist__count" id="blogCount">Showing 6 of 9 articles</p>
+    </div>
+  </div>
+</section>
+<!-- ============ CTA BANNER ============ -->
+<section class="acta">
+  <div class="container">
+    <div class="acta__inner" data-reveal>
+      <img class="acta__bg" src="assets/images/cta-london.jpg" alt="" aria-hidden="true" width="1600" height="900" loading="lazy">
+      <div class="acta__overlay"></div>
+      <div class="acta__content">
+        <span class="hero__badge">Free 30-Minute Assessment</span>
+        <h2>Your Path to a New <br>Future Starts Here</h2>
+        <p>Book a free consultation with one of our experts today.</p>
+        <div class="acta__actions">
+          <a href="contact.html" class="btn btn--red btn--lg">Schedule Consultation <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="tel:+923200557755" class="acta__call"><i class="fa-solid fa-phone-volume"></i> +92 3200557 755</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container footer__top-inner">
+      <a href="index.html" class="brand brand--light">
+        <img src="assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+      </a>
+      <form class="newsletter" id="newsletterForm" novalidate>
+        <label for="nl-email" class="newsletter__label">Sign up to our newsletter for the latest immigration updates</label>
+        <div class="newsletter__field">
+          <input type="email" id="nl-email" placeholder="Enter your email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <p class="form-note" id="nlNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer__grid">
+    <div class="footer__col footer__col--intro">
+      <p class="footer__about">SxopeHit helps professionals, students, families and businesses navigate international recruitment, immigration and student visa processes.</p>
+      <div class="socials socials--light">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Our Services</h4>
+      <ul class="footer__links">
+        <li><a href="service-recruitment.html">Recruitment Services</a></li>
+        <li><a href="service-student-visa.html">Student Visa Consultancy</a></li>
+        <li><a href="service-immigration.html">Immigration Services</a></li>
+        <li><a href="service-investment.html">Investment &amp; Citizenship</a></li>
+        <li><a href="services.html">All Services</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Useful Links</h4>
+      <ul class="footer__links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faqs.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Get In Touch</h4>
+      <ul class="footer__contact">
+        <li><i class="fa-solid fa-location-dot"></i> <span>Office #105, 2nd floor, Chaudhary Center Sodhiwal, Near Yateem Khana, Multan Road, Lahore, Pakistan</span></li>
+        <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:+923200557755">+92 3200557 755</a></li>
+        <li><i class="fa-regular fa-envelope"></i> <span><a href="mailto:support@sxopehit.com">support@sxopehit.com</a><br><a href="mailto:hr@sxopehit.com">hr@sxopehit.com</a></span></li>
+        <li><i class="fa-regular fa-clock"></i> <span>Mon &ndash; Sat: 9.00am &ndash; 06.00pm<br><span class="footer__muted">Sunday: Closed</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>Copyright &copy; <span data-year>2026</span> SxopeHit. All rights reserved.copy; <span data-year>2026</span> SxopeHit. All Rights Reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 40 40"><circle class="to-top__track" cx="20" cy="20" r="18"></circle><circle class="to-top__bar" cx="20" cy="20" r="18" id="toTopBar"></circle></svg>
+  <i class="fa-solid fa-angle-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
