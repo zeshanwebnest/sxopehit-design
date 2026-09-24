@@ -1975,3 +1975,25 @@ p{margin:0 0 1rem}
   .legal__block h2{font-size:1.2rem;gap:11px}
   .legal__note{padding:18px 20px;gap:12px}
 }
+
+/* =========================================================
+   25. UNIVERSITY PARTNERS SLIDER
+   ========================================================= */
+.unis{background:var(--soft)}
+.unis-swiper{width:100%;overflow:hidden;padding:6px 0}
+/* linear timing turns the autoplay into a smooth continuous ticker */
+.unis-swiper .swiper-wrapper{transition-timing-function:linear!important;align-items:center}
+.unis-swiper .swiper-slide{width:auto;flex:0 0 auto}
+.uni{
+  width:238px;height:122px;
+  display:grid;place-items:center;
+  background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:16px 22px;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease);
+}
+.uni:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.uni img{width:100%;height:auto;max-height:80px;object-fit:contain;max-width:none}
+@media (max-width:768px){
+  .uni{width:196px;height:106px;padding:14px 18px}
+  .uni img{max-height:68px}
+}

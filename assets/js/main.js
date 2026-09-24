@@ -537,6 +537,41 @@
     });
   })();
 
-  /* ---------- 18. CURRENT YEAR ---------- */
+  /* ---------- 18. UNIVERSITY PARTNERS TICKER ---------- */
+  (function uniSlider() {
+    var el = $('#uniSwiper');
+    if (!el || typeof window.Swiper === 'undefined') return;
+
+    new window.Swiper(el, {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      speed: 4200,
+      allowTouchMove: true,
+      freeMode: { enabled: true, momentum: false },
+      autoplay: reduced ? false : { delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true },
+      a11y: { enabled: true }
+    });
+  })();
+
+  /* ---------- 19. ARTICLE SHARE LINKS ---------- */
+  (function shareLinks() {
+    var links = $$('[data-share]');
+    if (!links.length) return;
+
+    var url = encodeURIComponent(window.location.href);
+    var title = encodeURIComponent(document.title);
+
+    links.forEach(function (a) {
+      var kind = a.getAttribute('data-share');
+      if (kind === 'whatsapp') {
+        a.href = 'https://wa.me/?text=' + title + '%20' + url;
+      } else {
+        a.href = a.getAttribute('href') + url;
+      }
+    });
+  })();
+
+  /* ---------- 20. CURRENT YEAR ---------- */
   $$('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
 })();
