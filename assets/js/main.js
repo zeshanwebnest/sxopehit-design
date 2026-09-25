@@ -434,16 +434,18 @@
 
   /* ---------- 15. GALLERY LIGHTBOX ---------- */
   (function lightbox() {
-    var grid = $('#galleryGrid');
     var box = $('#lightbox');
-    if (!grid || !box) return;
+    var grids = $$('[data-gallery]');
+    if (!box || !grids.length) return;
 
-    var items = $$('.gitem', grid);
     var img = $('#lbImg');
     var count = $('#lbCount');
+    var items = [];
     var index = 0;
+    var opener = null;
 
     function show(n) {
+      if (!items.length) return;
       index = (n + items.length) % items.length;
       var btn = items[index];
       var thumb = $('img', btn);
@@ -451,7 +453,9 @@
       img.alt = thumb ? thumb.alt : '';
       count.textContent = (index + 1) + ' / ' + items.length;
     }
-    function open(n) {
+    function open(list, n, from) {
+      items = list;
+      opener = from;
       show(n);
       box.classList.add('is-open');
       document.body.classList.add('is-locked');
@@ -460,12 +464,22 @@
     function close() {
       box.classList.remove('is-open');
       document.body.classList.remove('is-locked');
-      if (items[index]) items[index].focus();
+      if (opener) opener.focus();
     }
 
-    items.forEach(function (btn, n) {
-      btn.addEventListener('click', function () { open(n); });
+    /* each [data-gallery] is one set; marquee clones reuse their original's index */
+    grids.forEach(function (grid) {
+      var all = $$('.gitem', grid);
+      var list = all.filter(function (b) { return !b.hasAttribute('data-clone'); });
+      if (!list.length) return;
+      all.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var n = parseInt(btn.getAttribute('data-index'), 10);
+          open(list, isNaN(n) ? 0 : n, btn);
+        });
+      });
     });
+
     $('#lbClose') && $('#lbClose').addEventListener('click', close);
     $('#lbPrev') && $('#lbPrev').addEventListener('click', function () { show(index - 1); });
     $('#lbNext') && $('#lbNext').addEventListener('click', function () { show(index + 1); });
