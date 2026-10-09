@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Study in Georgia with SxopeHit - D3 study visa guidance for MBBS and other programmes, and a 95% visa approval success rate for Pakistani students.">
+<title>Study in Georgia | Student Visa Consultancy | SxopeHit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <span class="preloader__plane"><i class="fa-solid fa-paper-plane"></i></span>
+    <span class="preloader__bar"><i></i></span>
+  </div>
+</div>
+
+<!-- ============ SEARCH POPUP ============ -->
+<div class="search-popup" id="searchPopup">
+  <button class="search-popup__close" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <form class="search-popup__form" onsubmit="return false;">
+    <input type="search" placeholder="Type keyword and hit enter..." aria-label="Search">
+    <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+</div>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <div class="mobile-nav__head">
+    <a href="../index.html" class="brand brand--light">
+      <img src="../assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+    </a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="mobile-nav__menu">
+    <ul class="m-menu">
+      <li><a href="../index.html">Home</a></li>
+      <li class="has-children"><a href="../about.html">Pages</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="../about.html">About Us</a></li><li><a href="../team.html">Our Team</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../faqs.html">FAQ</a></li></ul>
+      </li>
+      <li class="has-children"><a href="../services.html">Services</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="../service-recruitment.html">Recruitment Services</a></li><li class="has-children"><a href="../service-student-visa.html">Student Visa Consultancy</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span><ul class="m-sub"><li><a href="australia-universities.html">Australia Universities</a></li><li><a href="canada-universities.html">Canada Universities</a></li><li><a href="china-universities.html">China Universities</a></li><li><a href="europe-universities.html">Europe Universities</a></li><li><a href="georgia-universities.html">Georgia Universities</a></li><li><a href="hong-kong-universities.html">Hong Kong Universities</a></li><li><a href="japan-universities.html">Japan Universities</a></li><li><a href="malaysia-universities.html">Malaysia Universities</a></li><li><a href="new-zealand-universities.html">New Zealand Universities</a></li><li><a href="singapore-universities.html">Singapore Universities</a></li><li><a href="turkey-universities.html">Turkey Universities</a></li><li><a href="uae-universities.html">UAE Universities</a></li><li><a href="uk-universities.html">UK Universities</a></li><li><a href="usa-universities.html">USA Universities</a></li><li><a href="uzbekistan-universities.html">Uzbekistan Universities</a></li><li><a href="vietnam-universities.html">Vietnam Universities</a></li></ul></li><li><a href="../service-immigration.html">Immigration Services</a></li><li><a href="../service-investment.html">Investment &amp; Citizenship</a></li></ul>
+      </li>
+      <li class="has-children"><a href="../blog.html">Blog</a><span class="m-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        <ul class="m-sub"><li><a href="../blog.html">Blog Grid</a></li><li><a href="../blog-details.html">Blog Details</a></li></ul>
+      </li>
+      <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav__foot">
+    <a href="tel:+923200557755" class="mobile-nav__call"><i class="fa-solid fa-phone"></i> +92 3200557 755</a>
+    <div class="socials socials--light">
+      <a href="https://www.facebook.com/sxop.lhr" target="_blank" rel="noopener" aria-label="SxopeHit on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@sxopehit_consultants" target="_blank" rel="noopener" aria-label="SxopeHit on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/sxopehit/" target="_blank" rel="noopener" aria-label="SxopeHit on Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/javed-asghar/" target="_blank" rel="noopener" aria-label="SxopeHit on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ HEADER + HERO (overlay header on a boxed hero) ============ -->
+<div class="page-top">
+
+  <header class="site-header" id="siteHeader">
+    <div class="topbar">
+      <div class="topbar__inner">
+        <ul class="topbar__meta">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:support@sxopehit.com">support@sxopehit.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Multan Road, Lahore, Pakistan</li>
+        </ul>
+        <div class="topbar__social">
+          <a href="https://www.facebook.com/sxop.lhr" target="_blank" rel="noopener" aria-label="SxopeHit on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sxopehit/" target="_blank" rel="noopener" aria-label="SxopeHit on Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@sxopehit_consultants" target="_blank" rel="noopener" aria-label="SxopeHit on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.linkedin.com/in/javed-asghar/" target="_blank" rel="noopener" aria-label="SxopeHit on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/923200557755" target="_blank" rel="noopener" aria-label="Message SxopeHit on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar" id="navbar">
+      <div class="navbar__inner">
+        <a href="../index.html" class="brand">
+          <img src="../assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+        </a>
+
+        <div class="navpill">
+          <nav class="mainmenu" aria-label="Main navigation">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li class="has-drop"><a href="../about.html">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="../about.html">About Us</a></li>
+                  <li><a href="../team.html">Our Team</a></li>
+                  <li><a href="../gallery.html">Gallery</a></li>
+                  <li><a href="../faqs.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="has-drop is-active"><a href="../services.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="../service-recruitment.html">Recruitment Services</a></li>
+                  <li class="has-drop2"><a href="../service-student-visa.html">Student Visa Consultancy <i class="fa-solid fa-angle-right"></i></a>
+                    <ul class="submenu2">
+                      <li><a href="australia-universities.html">Australia Universities</a></li>
+                      <li><a href="canada-universities.html">Canada Universities</a></li>
+                      <li><a href="china-universities.html">China Universities</a></li>
+                      <li><a href="europe-universities.html">Europe Universities</a></li>
+                      <li><a href="georgia-universities.html">Georgia Universities</a></li>
+                      <li><a href="hong-kong-universities.html">Hong Kong Universities</a></li>
+                      <li><a href="japan-universities.html">Japan Universities</a></li>
+                      <li><a href="malaysia-universities.html">Malaysia Universities</a></li>
+                      <li><a href="new-zealand-universities.html">New Zealand Universities</a></li>
+                      <li><a href="singapore-universities.html">Singapore Universities</a></li>
+                      <li><a href="turkey-universities.html">Turkey Universities</a></li>
+                      <li><a href="uae-universities.html">UAE Universities</a></li>
+                      <li><a href="uk-universities.html">UK Universities</a></li>
+                      <li><a href="usa-universities.html">USA Universities</a></li>
+                      <li><a href="uzbekistan-universities.html">Uzbekistan Universities</a></li>
+                      <li><a href="vietnam-universities.html">Vietnam Universities</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../service-immigration.html">Immigration Services</a></li>
+                  <li><a href="../service-investment.html">Investment &amp; Citizenship</a></li>
+                  <li><a href="../services.html">All Services</a></li>
+                </ul>
+              </li>
+              <li class="has-drop"><a href="../blog.html">Blog <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="../blog.html">Blog Grid</a></li>
+                  <li><a href="../blog-details.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="navpill__tools">
+            <button class="pill-icon" id="searchToggle" aria-label="Open search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="pill-icon" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+            <a href="tel:+923200557755" class="phone-btn"><i class="fa-solid fa-comment-dots"></i> +92 3200557 755</a>
+          </div>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <section class="page-banner">
+    <img class="page-banner__bg" src="../assets/images/student-visa-graduation.jpg"
+         alt="Graduates celebrating after studying abroad" fetchpriority="high" decoding="async" width="2400" height="1200">
+    <div class="page-banner__overlay"></div>
+    <div class="container">
+      <div class="page-banner__content">
+        <span class="hero__badge">Study Abroad With Confidence</span>
+        <h1>Study in <br>Georgia</h1>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="../services.html">Services</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="../service-student-visa.html">Student Visa Consultancy</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span aria-current="page">Georgia</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============ WHY STUDY HERE ============ -->
+<section class="svcd section">
+  <div class="container svcd__grid">
+    <div class="svcd__media" data-reveal>
+      <img src="../assets/images/advisers-answering-questions.jpg" alt="Students preparing their Georgia student visa application" width="1200" height="900">
+    </div>
+    <div class="svcd__content" data-reveal data-delay="140">
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> Study in Georgia</span>
+      <h2 class="sec-title-plain sec-title--left">Why Pakistani Students Choose Georgia</h2>
+      <p class="lead">Georgia (Sakartvelo, capital Tbilisi) has become a leading low-cost MBBS and higher-education destination for Pakistani students, with no entrance exam or IELTS required at most universities.</p>
+      <p><strong>Affordable, WHO-recognised medical education.</strong> Private Georgian medical universities such as New Vision University and David Tvildiani Medical University are listed in the WHO's World Directory of Medical Schools, at a fraction of the cost of private colleges in Pakistan.</p>
+      <p><strong>Important update for new applicants.</strong> From the 2026&ndash;27 academic year, Georgia's public universities are moving to a citizen-first tuition policy and will stop admitting new international students &mdash; so we focus new applications on private universities, which remain fully open to international students.</p>
+      <ul class="check-list">
+        <li><i class="fa-solid fa-check"></i> Very low-cost MBBS/MD tuition versus Pakistan</li>
+        <li><i class="fa-solid fa-check"></i> WHO/PMDC-relevant medical degree recognition</li>
+        <li><i class="fa-solid fa-check"></i> No entrance exam or IELTS at most universities</li>
+        <li><i class="fa-solid fa-check"></i> Ranked among the safest countries in the world</li>
+        <li><i class="fa-solid fa-check"></i> Short flight &amp; growing Pakistani student community</li>
+        <li><i class="fa-solid fa-check"></i> English-medium teaching for most programmes</li>
+      </ul>
+      <a href="../contact.html" class="btn btn--red btn--lg">Start Your Georgia Application <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEY FACTS ============ -->
+<section class="astats">
+  <img class="astats__bg" src="../assets/images/stats-global.jpg" alt="" aria-hidden="true" width="1920" height="640" loading="lazy">
+  <div class="astats__overlay"></div>
+  <div class="container">
+    <div class="astats__grid astats__grid--three">
+      <div class="astat" data-reveal><h3><span class="counter" data-count="4">0</span></h3><p>Weeks &mdash; Typical Visa Processing</p></div>
+      <div class="astat" data-reveal><h3><span class="counter" data-count="2">0</span></h3><p>Intakes a Year (Sep/Oct &amp; Jan/Feb)</p></div>
+      <div class="astat" data-reveal><h3><span class="counter" data-count="20">0</span></h3><p>Hrs/Week Part-Time Work (Practical Guideline)</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISA PROCESS ============ -->
+<section class="process section">
+  <div class="container">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> How We Work</span>
+      <h2 class="sec-title-plain">D3 Study Visa Process</h2>
+      <p class="sec-head__sub">Our step-by-step procedure for your Georgian D3 study visa and residence permit.</p>
+    </div>
+    <div class="process__grid">
+      <article class="pstep" data-reveal>
+        <span class="pstep__num">01</span>
+        <h3>Profile &amp; University Shortlist</h3>
+        <p>We assess your academic profile and shortlist private Georgian universities, including top MBBS/MD programmes, open to international students.</p>
+      </article>
+      <article class="pstep" data-reveal data-delay="90">
+        <span class="pstep__num">02</span>
+        <h3>Invitation Letter</h3>
+        <p>Once admitted, your institution issues a rector's order/invitation letter &mdash; the core document your D3 study visa application is built around.</p>
+      </article>
+      <article class="pstep" data-reveal data-delay="180">
+        <span class="pstep__num">03</span>
+        <h3>Funds, Insurance &amp; Medical Certificate</h3>
+        <p>We help you evidence financial means, arrange health insurance and prepare a medical certificate confirming absence of communicable disease.</p>
+      </article>
+      <article class="pstep" data-reveal data-delay="270">
+        <span class="pstep__num">04</span>
+        <h3>Lodge &amp; Residence Permit</h3>
+        <p>We submit your D3 visa application and, after arrival, guide you through converting it into a Student Residence Permit via the Public Service Development Agency.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCUMENTS REQUIRED ============ -->
+<section class="coverage section">
+  <div class="container container--narrow">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> Checklist</span>
+      <h2 class="sec-title-plain">Documents You'll Need</h2>
+      <p class="sec-head__sub">A typical Georgian D3 study visa application requires the following &mdash; we confirm the exact list for your profile at your free consultation.</p>
+    </div>
+    <ul class="check-list check-list--centered" data-reveal>
+      <li><i class="fa-solid fa-check"></i> Valid passport</li>
+      <li><i class="fa-solid fa-check"></i> University invitation/acceptance letter</li>
+      <li><i class="fa-solid fa-check"></i> Completed visa application form</li>
+      <li><i class="fa-solid fa-check"></i> Passport-size photo (ICAO standard)</li>
+      <li><i class="fa-solid fa-check"></i> Proof of financial means (last 3 months)</li>
+      <li><i class="fa-solid fa-check"></i> Proof of accommodation in Georgia</li>
+      <li><i class="fa-solid fa-check"></i> Travel/health insurance valid for Georgia</li>
+      <li><i class="fa-solid fa-check"></i> Medical certificate &amp; consular fee receipt</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--tight-bottom">
+  <div class="container container--narrow">
+    <div class="sec-head sec-head--center" data-reveal>
+      <span class="eyebrow eyebrow--navy"><i class="fa-solid fa-paper-plane"></i> FAQs</span>
+      <h2 class="sec-title-plain">Georgia Student Visa Questions</h2>
+    </div>
+    <div id="accordion" data-reveal data-delay="120">
+      <div class="acc-item is-open">
+        <button class="acc-head" type="button">Is an MBBS from Georgia recognised by PMDC and WHO?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>Several Georgian medical universities, including New Vision University and David Tvildiani Medical University, are listed in the WHO's World Directory of Medical Schools and have graduates recognised by PMDC. Recognition is specific to each university, so we confirm the exact institution's current PMDC listing before you enrol.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">Can I still apply to a public university like Tbilisi State Medical University?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>As of the 2026&ndash;27 academic year, Georgia's public (state) universities &mdash; including TSMU &mdash; are set to stop admitting new international students under a new citizen-first, free-tuition policy. Private Georgian medical universities remain open to international applicants, so we now plan most new applications around private institutions.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">Do I need an entrance exam or IELTS to study in Georgia?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>Most Georgian universities do not require a separate entrance exam or IELTS for international applicants &mdash; admission is typically based on academic documents and, in some cases, a university-administered interview or basic English test.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">Can I work part-time while studying in Georgia?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>There's no strict, universally cited hourly cap in law, but a commonly recommended practical limit is around 20 hours a week while maintaining full-time enrolment &mdash; actual job availability for international students is limited outside Tbilisi.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" type="button">How long does the Georgian student visa take, and is it multi-year?<i class="fa-solid fa-plus"></i></button>
+        <div class="acc-body"><p>The D3 study visa itself typically takes about 20&ndash;30 working days to process and is a short-term entry visa. After arrival, you convert it into a renewable Student Residence Permit tied to your enrolment duration.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="acta">
+  <div class="container">
+    <div class="acta__inner" data-reveal>
+      <img class="acta__bg" src="../assets/images/cta-london.jpg" alt="" aria-hidden="true" width="1600" height="900" loading="lazy">
+      <div class="acta__overlay"></div>
+      <div class="acta__content">
+        <span class="hero__badge">Free 30-Minute Assessment</span>
+        <h2>Your Georgia Study <br>Journey Starts Here</h2>
+        <p>Book a free consultation with one of our Georgia study visa experts today.</p>
+        <div class="acta__actions">
+          <a href="../contact.html" class="btn btn--red btn--lg">Schedule Consultation <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="tel:+923200557755" class="acta__call"><i class="fa-solid fa-phone-volume"></i> +92 3200557 755</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container footer__top-inner">
+      <a href="../index.html" class="brand brand--light">
+        <img src="../assets/images/sxopehit-logo.png" alt="SxopeHit Recruitment Services" class="brand__logo" width="462" height="207">
+      </a>
+      <form class="newsletter" id="newsletterForm" novalidate>
+        <label for="nl-email" class="newsletter__label">Sign up to our newsletter for the latest immigration updates</label>
+        <div class="newsletter__field">
+          <input type="email" id="nl-email" placeholder="Enter your email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <p class="form-note" id="nlNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer__grid">
+    <div class="footer__col footer__col--intro">
+      <p class="footer__about">SxopeHit helps professionals, students, families and businesses navigate international recruitment, immigration and student visa processes.</p>
+      <div class="socials socials--light">
+        <a href="https://www.facebook.com/sxop.lhr" target="_blank" rel="noopener" aria-label="SxopeHit on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@sxopehit_consultants" target="_blank" rel="noopener" aria-label="SxopeHit on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/sxopehit/" target="_blank" rel="noopener" aria-label="SxopeHit on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/javed-asghar/" target="_blank" rel="noopener" aria-label="SxopeHit on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Our Services</h4>
+      <ul class="footer__links">
+        <li><a href="../service-recruitment.html">Recruitment Services</a></li>
+        <li><a href="../service-student-visa.html">Student Visa Consultancy</a></li>
+        <li><a href="../service-immigration.html">Immigration Services</a></li>
+        <li><a href="../service-investment.html">Investment &amp; Citizenship</a></li>
+        <li><a href="../services.html">All Services</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Useful Links</h4>
+      <ul class="footer__links">
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../team.html">Our Team</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../faqs.html">FAQ</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Get In Touch</h4>
+      <ul class="footer__contact">
+        <li><i class="fa-solid fa-location-dot"></i> <span>Office #105, 2nd floor, Chaudhary Center Sodhiwal, Near Yateem Khana, Multan Road, Lahore, Pakistan</span></li>
+        <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:+923200557755">+92 3200557 755</a></li>
+        <li><i class="fa-regular fa-envelope"></i> <span><a href="mailto:support@sxopehit.com">support@sxopehit.com</a><br><a href="mailto:hr@sxopehit.com">hr@sxopehit.com</a></span></li>
+        <li><i class="fa-regular fa-clock"></i> <span>Mon &ndash; Sat: 9.00am &ndash; 06.00pm<br><span class="footer__muted">Sunday: Closed</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>Copyright &copy; <span data-year>2026</span> SxopeHit. All Rights Reserved.</p>
+      <ul>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../terms-conditions.html">Terms &amp; Conditions</a></li>
+        <li><a href="../privacy-policy.html#cookies">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 40 40"><circle class="to-top__track" cx="20" cy="20" r="18"></circle><circle class="to-top__bar" cx="20" cy="20" r="18" id="toTopBar"></circle></svg>
+  <i class="fa-solid fa-angle-up"></i>
+</button>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

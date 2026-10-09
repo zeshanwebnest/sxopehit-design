@@ -69,7 +69,9 @@ h3{font-size:clamp(1.15rem,1.6vw,1.45rem)}
 p{margin:0 0 1rem}
 
 .container{width:100%;max-width:var(--container);margin:0 auto;padding:0 24px}
+.container--narrow{max-width:860px}
 .section{padding:clamp(64px,7vw,104px) 0}
+.section--tight-bottom{padding-bottom:clamp(32px,3.5vw,52px)}
 
 /* section heading */
 .sec-head{margin-bottom:56px}
@@ -152,6 +154,7 @@ p{margin:0 0 1rem}
 .socials--light a:hover{background:var(--red);transform:translateY(-2px)}
 
 .check-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 24px}
+.check-list--centered{max-width:860px;margin:0 auto}
 .check-list li{
   display:flex;align-items:center;gap:11px;
   font-family:var(--head);font-weight:600;font-size:.95rem;color:var(--ink);
@@ -226,6 +229,8 @@ p{margin:0 0 1rem}
 .m-sub li{border:0}
 .m-sub a{display:block;padding:9px 0 9px 16px;font-size:.92rem;color:rgba(255,255,255,.72)}
 .m-sub a:hover{color:#fff}
+.m-sub .m-sub a{padding-left:30px;font-size:.88rem}
+.m-sub .m-arrow{width:28px;height:28px}
 .mobile-nav__foot{padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:grid;gap:16px}
 .mobile-nav__call{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:700;color:#fff}
 .mobile-nav__call i{color:var(--red)}
@@ -307,6 +312,38 @@ p{margin:0 0 1rem}
 .mainmenu>ul>li:hover>.submenu{opacity:1;visibility:visible;transform:none}
 .submenu a{display:block;padding:9px 24px;font-size:.93rem;font-weight:500;color:var(--body)}
 .submenu a:hover{color:var(--red);padding-left:30px}
+
+/* second-level flyout, e.g. Services > Student Visa Consultancy > country list
+   laid out as a two-column panel, anchored to the TOP of the parent .submenu panel
+   (not centered on the trigger row) so it always sits just below the header and
+   never overflows upward, including in the sticky/collapsed header state */
+.has-drop2>a{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.has-drop2>a i{font-size:.62rem;opacity:.5;transition:transform .3s var(--ease)}
+.has-drop2:hover>a i{transform:translateX(3px)}
+.submenu2{
+  position:absolute;top:-3px;left:100%;margin-left:14px;transform:translateX(-8px);
+  width:min(480px,calc(100vw - 48px));max-height:calc(100vh - 120px);overflow-y:auto;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:2px 6px;
+  background:#fff;border-radius:16px;padding:14px;
+  box-shadow:0 24px 60px rgba(6,18,54,.22);border-top:3px solid var(--red);
+  opacity:0;visibility:hidden;
+  transition:opacity .3s var(--ease),visibility .3s var(--ease),transform .3s var(--ease);
+}
+.has-drop2:hover>.submenu2{opacity:1;visibility:visible;transform:translateX(0)}
+.submenu2 a{
+  display:block;padding:10px 14px;border-radius:10px;
+  font-size:.9rem;font-weight:500;color:var(--body);line-height:1.3;
+}
+.submenu2 a:hover{color:var(--red);background:var(--soft)}
+.submenu2::-webkit-scrollbar{width:6px}
+.submenu2::-webkit-scrollbar-track{background:transparent}
+.submenu2::-webkit-scrollbar-thumb{background:rgba(227,30,36,.35);border-radius:6px}
+.submenu2::-webkit-scrollbar-thumb:hover{background:rgba(227,30,36,.6)}
+.submenu2{scrollbar-width:thin;scrollbar-color:rgba(227,30,36,.4) transparent}
+@media (max-width:1600px){
+  .submenu2{left:auto;right:100%;margin-left:0;margin-right:14px;transform:translateX(8px)}
+  .has-drop2:hover>.submenu2{transform:translateX(0)}
+}
 
 .navpill__tools{display:flex;align-items:center;gap:6px;margin-left:14px}
 .pill-icon{

@@ -56,15 +56,26 @@
   $('#mobileNavClose') && $('#mobileNavClose').addEventListener('click', closeNav);
   backdrop && backdrop.addEventListener('click', closeNav);
 
-  // mobile submenu toggles
+  // mobile submenu toggles (supports nested, e.g. Services > Student Visa Consultancy > country)
+  function syncOpenAncestors(li) {
+    var parentUl = li.parentNode;
+    if (!parentUl || !parentUl.classList || !parentUl.classList.contains('m-sub')) return;
+    var ownerLi = parentUl.parentNode;
+    if (ownerLi && ownerLi.classList && ownerLi.classList.contains('is-open')) {
+      parentUl.style.maxHeight = parentUl.scrollHeight + 'px';
+      syncOpenAncestors(ownerLi);
+    }
+  }
+
   $$('.m-menu .m-arrow').forEach(function (arrow) {
-    arrow.addEventListener('click', function () {
+    arrow.addEventListener('click', function (e) {
+      e.stopPropagation();
       var li = arrow.parentNode;
       var sub = $('.m-sub', li);
       var isOpen = li.classList.contains('is-open');
 
-      $$('.m-menu > li.is-open').forEach(function (other) {
-        if (other === li) return;
+      Array.prototype.forEach.call(li.parentNode.children, function (other) {
+        if (other === li || !other.classList || !other.classList.contains('is-open')) return;
         other.classList.remove('is-open');
         var s = $('.m-sub', other);
         if (s) s.style.maxHeight = null;
@@ -72,6 +83,7 @@
 
       li.classList.toggle('is-open', !isOpen);
       if (sub) sub.style.maxHeight = isOpen ? null : sub.scrollHeight + 'px';
+      syncOpenAncestors(li);
     });
   });
 
