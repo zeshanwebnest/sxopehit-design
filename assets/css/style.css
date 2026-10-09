@@ -313,23 +313,27 @@ p{margin:0 0 1rem}
 .submenu a{display:block;padding:9px 24px;font-size:.93rem;font-weight:500;color:var(--body)}
 .submenu a:hover{color:var(--red);padding-left:30px}
 
-/* second-level flyout, e.g. Services > Student Visa Consultancy > country list
-   laid out as a two-column panel, anchored to the TOP of the parent .submenu panel
-   (not centered on the trigger row) so it always sits just below the header and
-   never overflows upward, including in the sticky/collapsed header state */
+/* second-level flyout, e.g. Services > Student Visa Consultancy > country list.
+   Anchored to its OWN trigger row (each .has-drop2 row gets its own positioned
+   box) and extends down-and-right from there — never centered and never anchored
+   to a shared ancestor, so it works correctly when several rows in the same
+   dropdown (Student Visa / Immigration / Investment) each have their own flyout,
+   and it never overflows above the header in the sticky/collapsed state. */
+.has-drop2{position:relative}
 .has-drop2>a{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .has-drop2>a i{font-size:.62rem;opacity:.5;transition:transform .3s var(--ease)}
 .has-drop2:hover>a i{transform:translateX(3px)}
 .submenu2{
-  position:absolute;top:-3px;left:100%;margin-left:14px;transform:translateX(-8px);
-  width:min(480px,calc(100vw - 48px));max-height:calc(100vh - 120px);overflow-y:auto;
-  display:grid;grid-template-columns:repeat(2,1fr);gap:2px 6px;
-  background:#fff;border-radius:16px;padding:14px;
+  position:absolute;top:-14px;left:100%;margin-left:14px;transform:translateX(-8px);
+  width:260px;max-height:calc(100vh - 120px);overflow-y:auto;
+  background:#fff;border-radius:16px;padding:12px;
   box-shadow:0 24px 60px rgba(6,18,54,.22);border-top:3px solid var(--red);
   opacity:0;visibility:hidden;
   transition:opacity .3s var(--ease),visibility .3s var(--ease),transform .3s var(--ease);
 }
 .has-drop2:hover>.submenu2{opacity:1;visibility:visible;transform:translateX(0)}
+/* wider two-column layout for longer destination lists (student visa, investment) */
+.submenu2--cols2{width:min(480px,calc(100vw - 48px));display:grid;grid-template-columns:repeat(2,1fr);gap:2px 6px}
 .submenu2 a{
   display:block;padding:10px 14px;border-radius:10px;
   font-size:.9rem;font-weight:500;color:var(--body);line-height:1.3;
