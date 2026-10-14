@@ -387,33 +387,131 @@
 
   /* ---------- 14. FORMS ---------- */
   function isEmail(value) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value); }
+  function isPhone(value) { return /^[0-9+()\-.\s]{7,20}$/.test(value); }
+
+  /* shows/hides service-specific field groups inside a form and keeps `required`
+     in sync with visibility so hidden fields never block submission */
+  function wireConditionalFields(form, serviceSelect) {
+    var groups = $$('.field--conditional', form);
+    if (!groups.length) return function () {};
+
+    function sync() {
+      var selected = serviceSelect.value;
+      groups.forEach(function (group) {
+        var active = group.getAttribute('data-service') === selected;
+        group.classList.toggle('is-active', active);
+        $$('input, select, textarea', group).forEach(function (field) {
+          if (field.dataset.wasRequired === undefined) {
+            field.dataset.wasRequired = field.hasAttribute('required') ? '1' : '0';
+          }
+          if (active) {
+            if (field.dataset.wasRequired === '1') field.setAttribute('required', '');
+          } else {
+            field.removeAttribute('required');
+            field.classList.remove('has-error');
+          }
+        });
+      });
+    }
+
+    serviceSelect.addEventListener('change', sync);
+    sync();
+    return sync;
+  }
+
+  /* collects every visible, named field in the form into a flat payload,
+     splitting the shared base fields from service-specific "extra" fields */
+  function collectPayload(form) {
+    var base = {};
+    var fields = {};
+    var baseNames = { service: 1, country: 1, name: 1, email: 1, phone: 1, date: 1, message: 1, website: 1 };
+
+    $$('[name]', form).forEach(function (el) {
+      var group = el.closest('.field--conditional');
+      if (group && !group.classList.contains('is-active')) return; // skip hidden service fields
+      var name = el.name;
+      var value = el.value.trim();
+      if (baseNames[name]) {
+        base[name] = value;
+      } else {
+        fields[name] = value;
+      }
+    });
+
+    base.fields = fields;
+    return base;
+  }
+
+  function setSubmitting(form, submitting) {
+    var btn = $('button[type="submit"]', form);
+    if (!btn) return;
+    btn.disabled = submitting;
+    btn.classList.toggle('is-loading', submitting);
+  }
+
+  function submitEnquiry(form, note, successMessage) {
+    var requiredFields = $$('input[required], select[required], textarea[required]', form);
+    var bad = 0;
+
+    requiredFields.forEach(function (field) {
+      var value = field.value.trim();
+      var invalid = !value || (field.type === 'email' && !isEmail(value)) || (field.type === 'tel' && !isPhone(value));
+      field.classList.toggle('has-error', invalid);
+      if (invalid) bad++;
+    });
+
+    if (bad) {
+      note.textContent = 'Please complete the highlighted fields before submitting.';
+      note.className = 'form-note is-err';
+      return;
+    }
+
+    var payload = collectPayload(form);
+    setSubmitting(form, true);
+    note.textContent = 'Sending your enquiry…';
+    note.className = 'form-note';
+
+    fetch('/api/send-enquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) {
+        return res.json().catch(function () { return {}; }).then(function (data) {
+          return { ok: res.ok && data.ok, data: data };
+        });
+      })
+      .then(function (result) {
+        setSubmitting(form, false);
+        if (result.ok) {
+          note.textContent = successMessage;
+          note.className = 'form-note is-ok';
+          form.reset();
+          var svc = $('select[name="service"]', form);
+          if (svc) svc.dispatchEvent(new Event('change'));
+        } else {
+          note.textContent = (result.data && result.data.error) || 'Something went wrong. Please try again or call us directly.';
+          note.className = 'form-note is-err';
+        }
+      })
+      .catch(function () {
+        setSubmitting(form, false);
+        note.textContent = 'We could not reach the server. Please check your connection and try again.';
+        note.className = 'form-note is-err';
+      });
+  }
 
   (function apptForm() {
     var form = $('#apptForm');
     var note = $('#formNote');
     if (!form) return;
 
+    var serviceSelect = $('#f-service', form);
+    if (serviceSelect) wireConditionalFields(form, serviceSelect);
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var fields = $$('input[required], select[required]', form);
-      var bad = 0;
-
-      fields.forEach(function (field) {
-        var value = field.value.trim();
-        var invalid = !value || (field.type === 'email' && !isEmail(value));
-        field.classList.toggle('has-error', invalid);
-        if (invalid) bad++;
-      });
-
-      if (bad) {
-        note.textContent = 'Please complete the highlighted fields before submitting.';
-        note.className = 'form-note is-err';
-        return;
-      }
-
-      note.textContent = 'Thank you. Your appointment request has been received — an advisor will contact you within one business day.';
-      note.className = 'form-note is-ok';
-      form.reset();
+      submitEnquiry(form, note, 'Thank you. Your appointment request has been received — an advisor will contact you within one business day.');
     });
 
     // clear the error state as soon as the user corrects a field
@@ -537,24 +635,7 @@
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var fields = $$('input[required], select[required]', form);
-      var bad = 0;
-
-      fields.forEach(function (field) {
-        var value = field.value.trim();
-        var invalid = !value || (field.type === 'email' && !isEmail(value));
-        field.classList.toggle('has-error', invalid);
-        if (invalid) bad++;
-      });
-
-      if (bad) {
-        note.textContent = 'Please complete the highlighted fields before sending.';
-        note.className = 'form-note is-err';
-        return;
-      }
-      note.textContent = 'Thank you. Your message has been sent - we will reply within one business day.';
-      note.className = 'form-note is-ok';
-      form.reset();
+      submitEnquiry(form, note, 'Thank you. Your message has been sent - we will reply within one business day.');
     });
 
     $$('input, select, textarea', form).forEach(function (field) {

@@ -272,20 +272,20 @@
       <form class="appt-form" id="contactForm" novalidate>
         <div class="field">
           <label for="c-name">Your Name</label>
-          <input type="text" id="c-name" placeholder="Enter your full name" required>
+          <input type="text" id="c-name" name="name" placeholder="Enter your full name" required>
         </div>
         <div class="field">
           <label for="c-email">Email Address</label>
-          <input type="email" id="c-email" placeholder="you@example.com" required>
+          <input type="email" id="c-email" name="email" placeholder="you@example.com" required>
         </div>
         <div class="field">
           <label for="c-phone">Phone Number</label>
-          <input type="tel" id="c-phone" placeholder="+92 000 000 0000" required>
+          <input type="tel" id="c-phone" name="phone" placeholder="+92 000 000 0000" required>
         </div>
         <div class="field">
           <label for="c-service">Service</label>
           <div class="select-wrap">
-            <select id="c-service" required>
+            <select id="c-service" name="service" required>
               <option value="">Choose a service</option>
               <option>Recruitment Services</option>
               <option>Student Visa Consultancy</option>
@@ -298,12 +298,13 @@
         </div>
         <div class="field field--full">
           <label for="c-subject">Subject</label>
-          <input type="text" id="c-subject" placeholder="What is this about?" required>
+          <input type="text" id="c-subject" name="subject" placeholder="What is this about?" required>
         </div>
         <div class="field field--full">
           <label for="c-message">Message</label>
-          <textarea id="c-message" rows="5" placeholder="Tell us briefly about your situation"></textarea>
+          <textarea id="c-message" name="message" rows="5" placeholder="Tell us briefly about your situation"></textarea>
         </div>
+        <input type="text" id="c-hp" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field field--full">
           <button type="submit" class="btn btn--red btn--lg btn--block">Send Message <i class="fa-solid fa-arrow-right"></i></button>
           <p class="form-note" id="contactNote" role="status"></p>

@@ -869,6 +869,10 @@ p{margin:0 0 1rem}
 .appt-form{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .field{display:grid;gap:8px}
 .field--full{grid-column:1/-1}
+.field--conditional{display:none}
+.field--conditional.is-active{display:grid}
+.hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0}
+.appt-form .btn.is-loading{opacity:.6;pointer-events:none}
 .field label{font-family:var(--head);font-weight:600;font-size:.83rem;color:rgba(255,255,255,.75);letter-spacing:.03em}
 .field input,.field select,.field textarea{
   width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);

@@ -1,0 +1,9 @@
+{
+  "name": "sxopehit-design",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SxopeHit static site with Vercel serverless API for enquiry form email routing.",
+  "dependencies": {
+    "nodemailer": "^6.10.1"
+  }
+}
