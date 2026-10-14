@@ -2069,6 +2069,7 @@ p{margin:0 0 1rem}
    26. SUCCESS STORIES MARQUEE GALLERY
    ========================================================= */
 .stories{background:#fff;overflow:hidden;--srow-gap:clamp(14px,1.5vw,22px)}
+.stories--soft{background:var(--soft)}
 
 .srows{display:grid;gap:var(--srow-gap)}
 /* the two tracks run in opposite directions; edges fade out */
